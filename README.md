@@ -11,10 +11,16 @@ Os exercícios abordam:
 ## Exercícios
 - Tabuada
 - Antecessor e sucessor
+- Área do círculo
 - Dobro, triplo e raiz quadrada
 - Conversão de moeda (real para dólar)
+- Conversão de temperatura
 - Cálculo de área e tinta necessária
-- Cálculo de desconto e aumento salarial
+- Cálculo de desconto do produto
+- Cálculo de aumento salarial
+- IMC
+- Cálculo da média do aluno
+- Par ou Ímpar
 
 ## Objetivo
 Praticar lógica de programação e consolidar os fundamentos iniciais de Python.
