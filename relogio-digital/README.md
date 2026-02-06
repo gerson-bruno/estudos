@@ -5,6 +5,8 @@ Relógio digital simples desenvolvido com **HTML**, **CSS** e **JavaScript**.
 ---
 
 ## 👀 Preview
+👉 **Para visualizar, [clique aqui](https://gerson-bruno.github.io/estudos/relogio-digital/)**
+
 ![Preview do Relógio](img/preview.png)
 
 ---
@@ -20,11 +22,6 @@ Relógio digital simples desenvolvido com **HTML**, **CSS** e **JavaScript**.
 - Exibe horas, minutos e segundos em tempo real  
 - Atualização automática a cada segundo  
 - Layout simples, limpo e fácil de entender  
-
----
-
-## ▶️ Como usar
-Abra o arquivo `index.html` em qualquer navegador.
 
 ---
 
