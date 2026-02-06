@@ -36,21 +36,21 @@ h2{
 }
 
 .relogio span{
-    width: 200px;
-    height: 120px;
+    width: clamp(90px, 20vw, 200px);
+    height: clamp(60px, 12vw, 120px);
     background-color: #de8d2979;
     border-radius: 10px 10px 0 0;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 70px;
+    font-size: clamp(32px, 8vw, 70px);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
 }
 
 .relogio .texto{
-    height: 30px;
-    font-size: 15px;
+    height: clamp(20px, 4vw, 30px);
+    font-size: clamp(10px, 2.5vw, 15px);
     text-transform: uppercase;
     letter-spacing: 2px;
     background-color: #2883A0;
@@ -61,9 +61,16 @@ h2{
 .relogio #ampm{
     bottom: 0;
     position: absolute;
-    width: 60px;
-    height: 30px;
-    font-size: 20px;
+    width: clamp(40px, 10vw, 60px);
+    height: clamp(20px, 4vw, 30px);
+    font-size: clamp(12px, 4vw, 20px);
     background-color: #e3dec792;
     border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .relogio {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

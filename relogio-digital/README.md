@@ -1,6 +1,6 @@
 # ⏰ Relógio Digital
 
-Relógio digital simples desenvolvido com **HTML**, **CSS** e **JavaScript**.
+Relógio digital simples e responsivo desenvolvido com **HTML**, **CSS** e **JavaScript**.
 
 ---
 
