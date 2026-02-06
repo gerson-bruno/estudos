@@ -222,6 +222,10 @@ body {
     accent-color: #539fa2;
 }
 
+.linkcolor {
+    color: #539fa2;
+}
+
 /* Remove o fundo azul do autofill no Chrome/Safari */
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px #fff inset; 
