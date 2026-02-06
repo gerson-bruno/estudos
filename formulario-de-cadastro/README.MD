@@ -1,6 +1,6 @@
-# 📝 Formulário de Cadastro
+# 📝 Formulário Completo
 
-Este é um **formulário de cadastro moderno e responsivo**, desenvolvido para aprendizado. Ele inclui campos de entrada de dados, seleção de gênero e funcionalidades extras, como mostrar/esconder senha.  
+Este é um **formulário completo (login, cadastro e recuperação de senha) moderno e responsivo**, desenvolvido para aprendizado. Ele inclui campos de entrada de dados, seleção de gênero e funcionalidades extras, como mostrar/esconder senha.  
 
 ---
 
@@ -46,7 +46,7 @@ Este é um **formulário de cadastro moderno e responsivo**, desenvolvido para a
 
 ## 🔗 Como acessar
 
-O formulário está disponível neste link: [Formulário de Cadastro](https://gerson-bruno.github.io/estudos/formulario-de-cadastro/)
+O formulário está disponível neste link: [Formulário de Completo](https://gerson-bruno.github.io/estudos/formulario-de-cadastro/)
 
 ---
 
