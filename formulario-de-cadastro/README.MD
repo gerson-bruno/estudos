@@ -46,7 +46,7 @@ Este é um **formulário completo (login, cadastro e recuperação de senha) mod
 
 ## 🔗 Como acessar
 
-O formulário está disponível neste link: [Formulário de Completo](https://gerson-bruno.github.io/estudos/formulario-de-cadastro/)
+O formulário está disponível neste link: [Formulário Completo](https://gerson-bruno.github.io/estudos/formulario-de-cadastro/)
 
 ---
 
