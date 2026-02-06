@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #494949e5;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#calculator {
+    width: 90%;
+    max-width: 500px;
+    padding: clamp(15px, 5%, 25px);
+    border: 1px solid #ccc;
+    border-radius: clamp(20px, 5%, 35px);
+    background-color: #f2f2f2;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 3%, 20px);
+}
+
+#display {
+    width: 100%;
+    padding: clamp(10px, 3%, 15px);
+    font-size: clamp(2rem, 6vw, 3rem);
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: clamp(10px, 2%, 20px);
+    background-color: #fff;
+    margin-bottom: clamp(10px, 3%, 15px);
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: clamp(5px, 2%, 10px);
+}
+
+button {
+    width: 100%;
+    padding: clamp(10px, 3vw, 20px);
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f2f2f2;
+}
+
+.colorbutton {
+    background-color: #ff8800;
+    color: #fff;
+}
+
+.colorbutton:hover {
+    background-color: #ff6600;
+}
+
+@media (max-width: 400px) {
+    #display {
+        font-size: clamp(1.5rem, 7vw, 2.5rem);
+        padding: clamp(8px, 3%, 12px);
+    }
+
+    button {
+        font-size: clamp(1.2rem, 5vw, 1.5rem);
+        padding: clamp(8px, 2.5vw, 12px);
+    }
+
+    #calculator {
+        padding: clamp(10px, 5%, 15px);
+        border-radius: clamp(15px, 5%, 25px);
+    }
+
+    .keys {
+        grid-gap: clamp(3px, 2%, 6px);
+    }
+}
