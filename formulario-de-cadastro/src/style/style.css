@@ -261,3 +261,17 @@ input:-ms-autofill {
         width: 90%;
     }
 }
+
+
+.error-message {
+    margin-top: 4px;
+    font-size: 11px;
+    color: #d9534f;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.error-message i {
+    font-size: 12px;
+}
