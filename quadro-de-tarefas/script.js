@@ -136,3 +136,4 @@ trash.addEventListener("drop", () => {
         draggingCard.classList.remove("dragging");
     }
 });
+
