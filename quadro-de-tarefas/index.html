@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <div class="task-input-container">
+        <div class="task-input-fields">
+            <input type="text" id="taskTitle" placeholder="Adicione uma nova tarefa">
+
+            <select id="taskColumn">
+                <option value="todo">A fazer</option>
+                <option value="doing">Fazendo</option>
+                <option value="done">Feito</option>
+            </select>
+
+            <button id="addTaskButton">Adicionar</button>
+        </div>    
+    </div>
+
+    <main class="kanban">
+
+        <!-- A FAZER -->
+        <div class="kanban-column" id="todo">
+            <div class="kanban-title">
+                <h2>A fazer</h2>
+                <button class="add-card">+</button>
+            </div>
+
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="badge medium">
+                        <span>Média Prioridade</span>  
+                    </div>
+                    <p class="card-title">Revisar documento do projeto</p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <button class="edit">Editar</button>
+                            <button class="remove">Remover</button>
+                        </div>
+                        <div class="user">
+                            <img src="img/avatar.jpg" alt="Perfil" class="profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="badge low">
+                        <span>Baixa Prioridade</span>  
+                    </div>
+                    <p class="card-title">Revisar documento do projeto</p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <button class="edit">Editar</button>
+                            <button class="remove">Remover</button>
+                        </div>
+                        <div class="user">
+                            <img src="img/avatar.jpg" alt="Perfil" class="profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FAZENDO -->
+        <div class="kanban-column" id="doing">
+            <div class="kanban-title">
+                <h2>Fazendo</h2>
+                <button class="add-card">+</button>
+            </div>
+
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="badge low">
+                        <span>Baixa Prioridade</span>  
+                    </div>
+                    <p class="card-title">Revisar documento do projeto</p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <button class="edit">Editar</button>
+                            <button class="remove">Remover</button>
+                        </div>
+                        <div class="user">
+                            <img src="img/avatar.jpg" alt="Perfil" class="profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEITO -->
+        <div class="kanban-column" id="done">
+            <div class="kanban-title">
+                <h2>Finalizado</h2>
+                <button class="add-card">+</button>
+            </div>
+
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="badge high">
+                        <span>Alta Prioridade</span>  
+                    </div>
+                    <p class="card-title">Revisar documento do projeto</p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <button class="edit">Editar</button>
+                            <button class="remove">Remover</button>
+                        </div>
+                        <div class="user">
+                            <img src="img/avatar.jpg" alt="Perfil" class="profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
