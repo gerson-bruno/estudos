@@ -9,7 +9,7 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(90deg, #efefef, #ebebeb);
+    background: linear-gradient(90deg, #f7f7f7);
     padding: 0 20px 20px;
 }
 
@@ -60,9 +60,9 @@ body {
     width: 100%;
 }
 
-#todo::after { background: #dce525; }
-#doing::after { background: #394e93; }
-#done::after { background: #c53642; }
+#todo::after { background: #cfe8a9; }
+#doing::after { background: #a3bff0; }
+#done::after { background: #f4a3a3; }
 
 .kanban-title {
     display: flex;
@@ -74,11 +74,15 @@ body {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: #394e93;
+    background: #cfd0d1;
     color: #fff;
     font-size: 24px;
     border: none;
     cursor: pointer;
+}
+
+.add-card:hover {
+    background-color: #878888; 
 }
 
 .kanban-cards {
@@ -107,9 +111,9 @@ body {
     color: #fff;
 }
 
-.badge.low { background: #dce525; }
-.badge.medium { background: #394e93; }
-.badge.high { background: #c53642; }
+.badge.low { background: #5b8c1aa6;}
+.badge.medium { background: #1c6290ae}
+.badge.high { background: #b74f4fa9; }
 
 .card-infos {
     display: flex;
