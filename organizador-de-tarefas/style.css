@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-
 }
 
 body {
@@ -30,7 +28,6 @@ body {
     padding: 16px;
     margin-bottom: 16px;
     text-align: center;
-    
 }
 
 .kanban {
@@ -94,7 +91,6 @@ body {
     justify-content: center;
 }
 
-
 .add-card:hover {
     color: #0f0f0f; 
 }
@@ -125,8 +121,8 @@ body {
     color: #fff;
 }
 
-.badge.low { background: #5b8c1aa6;}
-.badge.medium { background: #1c6290ae}
+.badge.low { background: #5b8c1aa6; }
+.badge.medium { background: #1c6290ae; }
 .badge.high { background: #b74f4fa9; }
 
 .card-infos {
@@ -145,6 +141,21 @@ body {
     border: none;
     cursor: pointer;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 4px; 
+}
+
+.edit-icon {
+    width: 16px;
+    height: 16px;
+    fill: #394e93; 
+    vertical-align: middle;
+}
+
+.edit:hover .edit-icon {
+    fill: #2c3a7f;
 }
 
 .profile {
@@ -169,7 +180,7 @@ body {
 
 .modal-content {
     background: #fff;
-   padding: 0 20px 20px ;
+    padding: 0 20px 20px;
     border-radius: 12px;
     width: 320px;
     display: flex;
@@ -179,28 +190,16 @@ body {
 
 /* Barra de título do modal */
 .modal-content h3 {
-    background-color: #d9d9d9; /* laranja pastel */
+    background-color: #d9d9d9;
     color: #181818;
     font-weight: 400;
     text-align: center;
     padding: 12px 0;
-    margin: 0 -20px 12px -20px; /* expande para as laterais do modal */
+    margin: 0 -20px 12px -20px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 
-.edit-icon {
-    fill: #394e93; /* cor padrão do lápis */
-    margin-right: 4px;
-    vertical-align: middle;
-}
-
-.edit:hover .edit-icon {
-    fill: #2c3a7f; /* cor ao passar o mouse */
-}
-
-
-/* LIXEIRA */
 /* LIXEIRA */
 #trash {
     position: fixed;
@@ -218,13 +217,11 @@ body {
     transition: transform 0.2s, background-color 0.2s;
 }
 
-/* Hover muda fundo e escala */
 #trash.hovered {
     background-color: #c53642;
     transform: scale(1.2);
 }
 
-/* SVG dentro da lixeira */
 #trash svg {
     width: 32px;
     height: 32px;
