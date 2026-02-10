@@ -10,7 +10,7 @@
 body {
     min-height: 100vh;
     background: linear-gradient(90deg, #efefef, #ebebeb);
-    padding: 20px;
+    padding: 0 20px 20px 20px;
 }
 
 .app {
@@ -20,27 +20,19 @@ body {
     margin: 0 auto;
 }
 
-.task-input-container{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.title-h1 {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+
+    font-size: 32px;
+    color: #3a3a3a;
+    font-weight: 600;
     padding: 16px;
-    gap: 12px;
-    margin-bottom: 20px;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 16px;
+    text-align: center;
+    background-color: #fff;
 }
 
-.task-input-fields input,
-.task-input-fields select {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    color: #3a3a3a;
-}
 
 #addTaskButton{
     padding: 8px 16px;
