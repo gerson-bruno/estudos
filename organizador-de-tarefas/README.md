@@ -6,7 +6,7 @@ Um quadro Kanban simples para gerenciamento de tarefas, feito em **HTML, CSS e J
 
 ## ⚡ Funcionalidades
 
-- 📝 Adicionar tarefas em colunas: **A Fazer**, **Em andamento** e **Concluído**  
+- 📝 Adicionar tarefas em colunas: **A Fazer**, **Em andamento** e **Concluído** 
 - ✏️ Editar tarefas existentes  
 - 🗑️ Arrastar tarefas para a lixeira para remover  
 - 🔖 Definir prioridade: **Baixa**, **Média**, **Alta**  
