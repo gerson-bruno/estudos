@@ -11,7 +11,7 @@
 <div class="app">
 
     <header>
-        <h1 class="title-h1">Quadro de Tarefas</h1>
+        <h1 class="title-h1">Organizador de Tarefas</h1>
     </header>
 
     <main class="kanban">
@@ -29,13 +29,18 @@
                         <span>Média Prioridade</span>
                     </div>
 
-                    <p class="card-title">Revisar documento do projeto</p>
+                    <p class="card-title">Organizar a agenda da semana.</p>
 
                     <div class="card-infos">
                         <div class="card-icons">
-                            <button class="edit">✏️ Editar</button>
+                            <button class="edit">
+                                <svg class="edit-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                                    <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/>
+                                </svg>
+                                Editar
+                            </button>
                         </div>
-                        <img src="img/avatar.jpg" alt="Perfil" class="profile">
+                        <img src="img/avatar.jpg" alt="Photo Profile" class="profile">
                     </div>
                 </article>
 
@@ -44,22 +49,27 @@
                         <span>Baixa Prioridade</span>
                     </div>
 
-                    <p class="card-title">Revisar documento do projeto</p>
+                    <p class="card-title">Planejar o roteiro da reunião.</p>
 
                     <div class="card-infos">
                         <div class="card-icons">
-                            <button class="edit">✏️ Editar</button>
+                            <button class="edit">
+                                <svg class="edit-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                                    <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/>
+                                </svg>
+                                Editar
+                            </button>
                         </div>
-                        <img src="img/avatar.jpg" alt="Perfil" class="profile">
+                        <img src="img/avatar.jpg" alt="Photo Profile" class="profile">
                     </div>
                 </article>
             </div>
         </section>
 
-        <!-- FAZENDO -->
+        <!-- Em andamento -->
         <section class="kanban-column" id="doing">
             <header class="kanban-title">
-                <h2>Fazendo</h2>
+                <h2>Em andamento</h2>
                 <button class="add-card">+</button>
             </header>
 
@@ -69,22 +79,27 @@
                         <span>Baixa Prioridade</span>
                     </div>
 
-                    <p class="card-title">Revisar documento do projeto</p>
+                    <p class="card-title">Desenvolvendo apresentações para clientes.</p>
 
                     <div class="card-infos">
                         <div class="card-icons">
-                            <button class="edit">✏️ Editar</button>
+                            <button class="edit">
+                                <svg class="edit-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                                    <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/>
+                                </svg>
+                                Editar
+                            </button>
                         </div>
-                        <img src="img/avatar.jpg" alt="Perfil" class="profile">
+                        <img src="img/avatar.jpg" alt="Photo Profile" class="profile">
                     </div>
                 </article>
             </div>
         </section>
 
-        <!-- FEITO -->
+        <!-- Concluído -->
         <section class="kanban-column" id="done">
             <header class="kanban-title">
-                <h2>Finalizado</h2>
+                <h2>Concluído</h2>
                 <button class="add-card">+</button>
             </header>
 
@@ -94,13 +109,18 @@
                         <span>Alta Prioridade</span>
                     </div>
 
-                    <p class="card-title">Revisar documento do projeto</p>
+                    <p class="card-title">Enviar relatório semanal.</p>
 
                     <div class="card-infos">
                         <div class="card-icons">
-                            <button class="edit">✏️ Editar</button>
+                            <button class="edit">
+                                <svg class="edit-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                                    <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/>
+                                </svg>
+                                Editar
+                            </button>
                         </div>
-                        <img src="img/avatar.jpg" alt="Perfil" class="profile">
+                        <img src="img/avatar.jpg" alt="Photo Profile" class="profile">
                     </div>
                 </article>
             </div>
@@ -141,7 +161,16 @@
 </div>
 
 <!-- LIXEIRA -->
-<div id="trash">🗑️</div>
+<div id="trash">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="3 6 5 6 21 6"></polyline>
+        <path d="M19 6l-1 14H6L5 6"></path>
+        <path d="M10 11v6"></path>
+        <path d="M14 11v6"></path>
+        <path d="M9 6V4h6v2"></path>
+    </svg>
+</div>
+
 
 <script src="script.js"></script>
 </body>

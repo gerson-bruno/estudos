@@ -1,20 +1,27 @@
-# 📝 Quadro de Tarefas - Kanban
+# Organizador de Tarefas
 
-Um **quadro de tarefas interativo** estilo Kanban, feito em **HTML, CSS e JavaScript**.  
-Ideal para organizar suas tarefas, definir prioridades e arrastar cards entre colunas.
+![Preview do Organizador de Tarefas](preview.png)
 
-🔗 **Acesse o projeto online:** [Quadro de Tarefas](https://gerson-bruno.github.io/estudos/organizador-de-tarefas/)
+Organizador de tarefas estilo Kanban, feito com **HTML, CSS e JavaScript puro**. Permite criar, editar, mover e deletar tarefas entre colunas "A Fazer", "Fazendo" e "Finalizado", além de uma lixeira para exclusão arrastando os cards. Ideal para organização pessoal e aprendizado de front-end.
 
----
+## Funcionalidades
 
-## 🛠 Estrutura e Funcionalidades
+- Adição de tarefas via modal
+- Edição de tarefas existentes
+- Arrastar e soltar tarefas entre colunas
+- Lixeira para exclusão de tarefas com confirmação
+- Sistema de prioridade (Baixa, Média e Alta)
+- Responsivo e visual clean
+- Cards com cores suaves para diferentes prioridades
 
-- ✅ **Adicionar tarefas** diretamente em qualquer coluna usando o botão `+`.
-- 🎨 **Selecionar prioridade** visual: baixa, média ou alta, com bolinhas coloridas.
-- 🖱 **Arrastar e soltar** tarefas entre as colunas: "A fazer", "Fazendo" e "Finalizado".
-- 🗑 **Excluir tarefas** arrastando para a lixeira no canto inferior direito, com confirmação.
-- 📏 Layout responsivo, compacto e com scroll interno quando necessário.
-- ✨ Botões estilizados com hover e efeitos visuais modernos.
+## Tecnologias
 
+- HTML5
+- CSS3 (Flexbox, Gradientes e Custom Scroll)
+- JavaScript (Drag & Drop, DOM Manipulation)
 
+## Como Acessar
+
+Você pode acessar a versão online aqui:  
+[Organizador de Tarefas](https://gerson-bruno.github.io/estudos/organizador-de-tarefas/)
 

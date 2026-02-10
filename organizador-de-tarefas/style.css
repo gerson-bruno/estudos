@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=SN+Pro:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'SN Pro', sans-serif;
+    font-family: 'Inter', sans-serif;
+
 }
 
 body {
     min-height: 100vh;
-    background: linear-gradient(90deg, #f7f7f7);
+    background: #e0e0e0;
     padding: 0 20px 20px;
 }
 
@@ -22,12 +24,13 @@ body {
     width: 100vw;
     margin-left: calc(50% - 50vw);
     font-size: 32px;
-    color: #3a3a3a;
-    font-weight: 600;
+    font-family:'Montserrat', sans-serif;
+    color: #333333;
+    font-weight: 700;
     padding: 16px;
     margin-bottom: 16px;
     text-align: center;
-    background-color: #fff;
+    
 }
 
 .kanban {
@@ -68,21 +71,32 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #323232;
+    font-weight: 200;      
+}    
+
+.kanban-title button {
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 .add-card {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: #cfd0d1;
-    color: #fff;
+    color: #6e6e6e;                          
     font-size: 24px;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+
 .add-card:hover {
-    background-color: #878888; 
+    color: #0f0f0f; 
 }
 
 .kanban-cards {
@@ -155,7 +169,7 @@ body {
 
 .modal-content {
     background: #fff;
-    padding: 20px;
+   padding: 0 20px 20px ;
     border-radius: 12px;
     width: 320px;
     display: flex;
@@ -163,6 +177,30 @@ body {
     gap: 12px;
 }
 
+/* Barra de título do modal */
+.modal-content h3 {
+    background-color: #d9d9d9; /* laranja pastel */
+    color: #181818;
+    font-weight: 400;
+    text-align: center;
+    padding: 12px 0;
+    margin: 0 -20px 12px -20px; /* expande para as laterais do modal */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.edit-icon {
+    fill: #394e93; /* cor padrão do lápis */
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.edit:hover .edit-icon {
+    fill: #2c3a7f; /* cor ao passar o mouse */
+}
+
+
+/* LIXEIRA */
 /* LIXEIRA */
 #trash {
     position: fixed;
@@ -170,13 +208,30 @@ body {
     right: 20px;
     width: 60px;
     height: 60px;
-    background: #c53642;
-    color: #fff;
+    background: #666666;   
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Hover muda fundo e escala */
+#trash.hovered {
+    background-color: #c53642;
+    transform: scale(1.2);
+}
+
+/* SVG dentro da lixeira */
+#trash svg {
+    width: 32px;
+    height: 32px;
+    stroke: #fff;  
+    transition: stroke 0.2s;
+}
+
+#trash.hovered svg {
+    stroke: #fff;  
 }
