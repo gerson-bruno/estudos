@@ -3,7 +3,7 @@
 Um **quadro de tarefas interativo** estilo Kanban, feito em **HTML, CSS e JavaScript**.  
 Ideal para organizar suas tarefas, definir prioridades e arrastar cards entre colunas.
 
-🔗 **Acesse o projeto online:** [Quadro de Tarefas](https://gerson-bruno.github.io/estudos/quadro-de-tarefas/)
+🔗 **Acesse o projeto online:** [Quadro de Tarefas](https://gerson-bruno.github.io/estudos/organizador-de-tarefas/)
 
 ---
 
