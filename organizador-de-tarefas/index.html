@@ -9,104 +9,106 @@
 <body>
 
 <div class="app">
-            <h1 class="title-h1">Quadro de Tarefas</h1>   
+
+    <header>
+        <h1 class="title-h1">Quadro de Tarefas</h1>
+    </header>
+
     <main class="kanban">
 
         <!-- A FAZER -->
-        <div class="kanban-column" id="todo">
-            <div class="kanban-title">
+        <section class="kanban-column" id="todo">
+            <header class="kanban-title">
                 <h2>A fazer</h2>
                 <button class="add-card">+</button>
-            </div>
+            </header>
 
             <div class="kanban-cards">
-                <!-- CARD 1 -->
-                <div class="kanban-card" draggable="true">
+                <article class="kanban-card" draggable="true">
                     <div class="badge medium">
-                        <span>Média Prioridade</span>  
+                        <span>Média Prioridade</span>
                     </div>
-                    <p class="card-title">Revisar documento do projeto</p>
-                    <div class="card-infos">
-                        <div class="card-icons">
-                            <button class="edit">Editar</button>
-                            <button class="remove">Remover</button>
-                        </div>
-                        <div class="user">
-                            <img src="img/avatar.jpg" alt="Perfil" class="profile">
-                        </div>
-                    </div>
-                </div>
 
-                <!-- CARD 2 -->
-                <div class="kanban-card" draggable="true">
-                    <div class="badge low">
-                        <span>Baixa Prioridade</span>  
-                    </div>
                     <p class="card-title">Revisar documento do projeto</p>
+
                     <div class="card-infos">
                         <div class="card-icons">
                             <button class="edit">Editar</button>
                             <button class="remove">Remover</button>
                         </div>
-                        <div class="user">
-                            <img src="img/avatar.jpg" alt="Perfil" class="profile">
-                        </div>
+                        <img src="img/avatar.jpg" alt="Perfil" class="profile">
                     </div>
-                </div>
+                </article>
+
+                <article class="kanban-card" draggable="true">
+                    <div class="badge low">
+                        <span>Baixa Prioridade</span>
+                    </div>
+
+                    <p class="card-title">Revisar documento do projeto</p>
+
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <button class="edit">Editar</button>
+                            <button class="remove">Remover</button>
+                        </div>
+                        <img src="img/avatar.jpg" alt="Perfil" class="profile">
+                    </div>
+                </article>
             </div>
-        </div>
+        </section>
 
         <!-- FAZENDO -->
-        <div class="kanban-column" id="doing">
-            <div class="kanban-title">
+        <section class="kanban-column" id="doing">
+            <header class="kanban-title">
                 <h2>Fazendo</h2>
                 <button class="add-card">+</button>
-            </div>
+            </header>
 
             <div class="kanban-cards">
-                <div class="kanban-card" draggable="true">
+                <article class="kanban-card" draggable="true">
                     <div class="badge low">
-                        <span>Baixa Prioridade</span>  
+                        <span>Baixa Prioridade</span>
                     </div>
+
                     <p class="card-title">Revisar documento do projeto</p>
+
                     <div class="card-infos">
                         <div class="card-icons">
                             <button class="edit">Editar</button>
                             <button class="remove">Remover</button>
                         </div>
-                        <div class="user">
-                            <img src="img/avatar.jpg" alt="Perfil" class="profile">
-                        </div>
+                        <img src="img/avatar.jpg" alt="Perfil" class="profile">
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
         <!-- FEITO -->
-        <div class="kanban-column" id="done">
-            <div class="kanban-title">
+        <section class="kanban-column" id="done">
+            <header class="kanban-title">
                 <h2>Finalizado</h2>
                 <button class="add-card">+</button>
-            </div>
+            </header>
 
             <div class="kanban-cards">
-                <div class="kanban-card" draggable="true">
+                <article class="kanban-card" draggable="true">
                     <div class="badge high">
-                        <span>Alta Prioridade</span>  
+                        <span>Alta Prioridade</span>
                     </div>
+
                     <p class="card-title">Revisar documento do projeto</p>
+
                     <div class="card-infos">
                         <div class="card-icons">
                             <button class="edit">Editar</button>
                             <button class="remove">Remover</button>
                         </div>
-                        <div class="user">
-                            <img src="img/avatar.jpg" alt="Perfil" class="profile">
-                        </div>
+                        <img src="img/avatar.jpg" alt="Perfil" class="profile">
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
     </main>
 </div>
@@ -142,11 +144,8 @@
     </div>
 </div>
 
-<!-- Lixeira -->
-<div id="trash">
-    🗑️
-</div>
-
+<!-- LIXEIRA -->
+<div id="trash">🗑️</div>
 
 <script src="script.js"></script>
 </body>

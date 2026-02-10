@@ -11,8 +11,37 @@ function enableDrag(card) {
     });
 }
 
-// ATIVA DRAG NOS CARDS EXISTENTES
-document.querySelectorAll(".kanban-card").forEach(enableDrag);
+// ===============================
+// AÇÕES DO CARD (EDITAR / REMOVER)
+// ===============================
+function enableCardActions(card) {
+    const editBtn = card.querySelector(".edit");
+    const removeBtn = card.querySelector(".remove");
+
+    if (editBtn) {
+        editBtn.addEventListener("click", () => {
+            const titleEl = card.querySelector(".card-title");
+            const newTitle = prompt("Editar tarefa:", titleEl.textContent);
+            if (newTitle) {
+                titleEl.textContent = newTitle;
+            }
+        });
+    }
+
+    if (removeBtn) {
+        removeBtn.addEventListener("click", () => {
+            card.remove();
+        });
+    }
+}
+
+// ===============================
+// ATIVA DRAG + AÇÕES NOS CARDS DO HTML
+// ===============================
+document.querySelectorAll(".kanban-card").forEach(card => {
+    enableDrag(card);
+    enableCardActions(card);
+});
 
 // ===============================
 // DRAG AND DROP NAS COLUNAS
@@ -48,7 +77,10 @@ let currentColumn = null;
 
 document.querySelectorAll(".add-card").forEach(button => {
     button.addEventListener("click", () => {
-        currentColumn = button.closest(".kanban-column").querySelector(".kanban-cards");
+        currentColumn = button
+            .closest(".kanban-column")
+            .querySelector(".kanban-cards");
+
         modal.classList.add("active");
         modalTitleInput.value = "";
         modalTitleInput.focus();
@@ -66,7 +98,9 @@ confirmBtn.addEventListener("click", () => {
     const title = modalTitleInput.value.trim();
     if (!title || !currentColumn) return;
 
-    const priority = document.querySelector('input[name="priority"]:checked').value;
+    const priority = document.querySelector(
+        'input[name="priority"]:checked'
+    ).value;
 
     const priorityMap = {
         low: "Baixa Prioridade",
@@ -95,15 +129,7 @@ confirmBtn.addEventListener("click", () => {
     `;
 
     enableDrag(card);
-
-    card.querySelector(".remove").addEventListener("click", () => card.remove());
-
-    card.querySelector(".edit").addEventListener("click", () => {
-        const newTitle = prompt("Editar tarefa:", title);
-        if (newTitle) {
-            card.querySelector(".card-title").textContent = newTitle;
-        }
-    });
+    enableCardActions(card);
 
     currentColumn.appendChild(card);
     modal.classList.remove("active");
@@ -136,4 +162,3 @@ trash.addEventListener("drop", () => {
         draggingCard.classList.remove("dragging");
     }
 });
-
