@@ -1,5 +1,5 @@
 // ===============================
-// FUNÇÃO DE DRAG
+// DRAG
 // ===============================
 function enableDrag(card) {
     card.addEventListener("dragstart", () => {
@@ -12,31 +12,25 @@ function enableDrag(card) {
 }
 
 // ===============================
-// AÇÕES DO CARD (EDITAR / REMOVER)
+// EDITAR
 // ===============================
 function enableCardActions(card) {
     const editBtn = card.querySelector(".edit");
-    const removeBtn = card.querySelector(".remove");
 
     if (editBtn) {
         editBtn.addEventListener("click", () => {
             const titleEl = card.querySelector(".card-title");
             const newTitle = prompt("Editar tarefa:", titleEl.textContent);
-            if (newTitle) {
-                titleEl.textContent = newTitle;
-            }
-        });
-    }
 
-    if (removeBtn) {
-        removeBtn.addEventListener("click", () => {
-            card.remove();
+            if (newTitle && newTitle.trim() !== "") {
+                titleEl.textContent = newTitle.trim();
+            }
         });
     }
 }
 
 // ===============================
-// ATIVA DRAG + AÇÕES NOS CARDS DO HTML
+// ATIVAR CARDS INICIAIS
 // ===============================
 document.querySelectorAll(".kanban-card").forEach(card => {
     enableDrag(card);
@@ -44,10 +38,10 @@ document.querySelectorAll(".kanban-card").forEach(card => {
 });
 
 // ===============================
-// DRAG AND DROP NAS COLUNAS
+// DRAG NAS COLUNAS
 // ===============================
 document.querySelectorAll(".kanban-cards").forEach(column => {
-    column.addEventListener("dragover", (e) => {
+    column.addEventListener("dragover", e => {
         e.preventDefault();
         column.classList.add("cards-hover");
     });
@@ -66,7 +60,7 @@ document.querySelectorAll(".kanban-cards").forEach(column => {
 });
 
 // ===============================
-// MODAL DE ADIÇÃO DE TAREFA
+// MODAL
 // ===============================
 const modal = document.getElementById("taskModal");
 const modalTitleInput = document.getElementById("modalTaskTitle");
@@ -108,23 +102,22 @@ confirmBtn.addEventListener("click", () => {
         high: "Alta Prioridade"
     };
 
-    const card = document.createElement("div");
-    card.classList.add("kanban-card");
-    card.setAttribute("draggable", "true");
+    const card = document.createElement("article");
+    card.className = "kanban-card";
+    card.draggable = true;
 
     card.innerHTML = `
         <div class="badge ${priority}">
             <span>${priorityMap[priority]}</span>
         </div>
+
         <p class="card-title">${title}</p>
+
         <div class="card-infos">
             <div class="card-icons">
-                <button class="edit">Editar</button>
-                <button class="remove">Remover</button>
+                <button class="edit">✏️ Editar</button>
             </div>
-            <div class="user">
-                <img src="img/avatar.jpg" class="profile">
-            </div>
+            <img src="img/avatar.jpg" class="profile">
         </div>
     `;
 
@@ -136,7 +129,7 @@ confirmBtn.addEventListener("click", () => {
 });
 
 // ===============================
-// LIXEIRA DRAG & DROP
+// LIXEIRA
 // ===============================
 const trash = document.getElementById("trash");
 
@@ -155,8 +148,7 @@ trash.addEventListener("drop", () => {
 
     trash.classList.remove("hovered");
 
-    const confirmDelete = confirm("Tem certeza que deseja apagar esta tarefa?");
-    if (confirmDelete) {
+    if (confirm("Apagar esta tarefa?")) {
         draggingCard.remove();
     } else {
         draggingCard.classList.remove("dragging");
