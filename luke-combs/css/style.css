@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: #cecece;
+    color: #13295c;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.content{
+    width: 70%;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 15px 0 0 15px;
+}
+
+.sidebar{
+    width: 30%;
+    background-color: #13295c;
+    color: #fff;
+    padding: 15px;
+    border-radius: 0 15px 15px 0;
+}
+
+
+h1{
+    font-family: "Rye", cursive;
+    font-size: 65px;
+    color: #BE9254;
+    margin: 0;
+    padding: 10px;
+    font-weight: 100;
+}
+
+h2{
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;    
+    gap: 20px;
+    list-style-type: none;
+    margin-bottom: 30px;  
+}
+
+a{
+    color: #13295c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a {
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background-color: #BE9254;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.text{
+    text-align: justify;
+}
+
+.img{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.189) 3px 3px 10px;
+}
+
+
+.table{
+    padding: 10px;
+    text-align: left;
+}
+
+hr{
+    margin-top: 40px;  
+}
+
+td{
+    border-bottom: #cecece solid 1px;
+}
+
+footer{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 12px;
+    color: #13295c;
+    padding: 10px;
+
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .content,
+  .sidebar {
+    width: 100%;
+    border-radius: 0;
+  }
+}
