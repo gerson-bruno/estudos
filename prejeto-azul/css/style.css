@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+/*Navbar*/
+.navbar{
+    background-color: #003C54;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.fa-solid {
+    font-size: 45px;
+}  
+
+.logo{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.menu{
+    display: flex;
+    gap: 1em; 
+}
+
+.menu a{
+    color:#ffffff;
+    display: block;
+    padding: .5rem;
+    transition: .3s;
+    margin: 0 auto;
+    text-decoration: none;
+    position: relative;
+
+}
+
+.menu a:hover {
+    color: #ffffff;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.5s ease;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.menu li{
+    text-decoration: none;
+    list-style: none; 
+}
+
+
+/*Banner*/
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    margin: 0 auto;
+ 
+}
+.wave{
+    max-width: 70%;
+    height: auto;
+    text-align: center;
+    flex: 3;
+}
+
+.title{
+    color: #01131a;
+}
+
+.subtitle{
+    color: #003C54;
+}
+
+.description{
+    color: #01131a;
+    padding: 5px;
+    font-size: 14px;
+}
+.whale{
+    max-width: 30%;
+    height: auto;
+    flex: 1; 
+}
+
+/*Features*/
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.features h3{
+    color: #ffffff;
+    text-align: center;
+    margin: 10px auto;
+}
+.features ul{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.features li {
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.features p{
+    color: #ffffff;
+    text-align: justify;
+    margin: 15px auto;
+    padding: 5px;
+}
+
+.feature-card-1{
+    background-color: #003C54;
+    color: #ffffff;
+}
+
+.feature-card-2{
+    background-color: #005476;
+    color: #ffffff;
+}
+
+.feature-card-3{
+    background-color: #01658d;
+    color: #ffffff;
+}   
+
+.feature-card-4{
+    background-color: #13759c;
+    color: #ffffff;
+}
+
+/*main*/
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content h2{
+    color: #003C54;
+    text-align: center;
+    margin: 10px auto;
+}
+.content p{
+    line-height: 1.6;
+    padding: 5px;
+    color: #01131a;
+}
+
+/*about*/
+.about{
+    display: flex;
+    align-items: stretch;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+.about-text h2{
+    color: #ffffff;
+    text-align: center;
+}
+.about-text{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #003C54;
+    color: #ffffff;
+    
+
+}
+.about-text p{
+    width: 80%;
+    line-height: 1.6;
+    padding: 5px;
+}
+
+.about-img{
+    height: auto;
+    flex: 1; 
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+}
+
+.social-media{
+    display: flex;
+    gap: 1em;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.fa-brands{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.fa-brands:hover{
+    color: #13759C;
+}
+
+/*preservation*/
+.preservation{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.preservation h2{
+    color: #003C54;
+    text-align: center;
+    margin: 10px auto;
+}
+.preservation p{
+    line-height: 1.6;
+    padding: 5px;
+    color: #01131a;
+}
+
+/*footer*/
+.footer{
+    background-color: #003C54;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .wave {
+    max-width: 100%;
+  }
+
+  .whale {
+    max-width: 80%;
+  }
+
+  .features ul {
+    flex-direction: column;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-img {
+    width: 100%;
+  }
+
+  .content,
+  .preservation {
+    width: 90%;
+  }
+
+}
