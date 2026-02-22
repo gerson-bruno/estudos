@@ -1,20 +1,22 @@
-# Instagram 2022 - Clone Front-end 😎
+# Instagram 2022 - Clone Front-end 😎📱
 
-Clone da homepage do Instagram de 2022, feito apenas com **HTML** e **CSS** 🎨
+Uma versão **clone** da homepage do Instagram de 2022, feita só com **HTML** e **CSS** 🎨  
+Perfeito pra treinar layout e design responsivo!
 
-## Preview 👀
+## 👀 Preview
 
 ![Preview](img/preview.png)
 
-## Acesso 🌐
+## 🌐 Acesso
 
-Você pode visualizar a página [clicando aqui](https://gerson-bruno.github.io/estudos/instagram-2022)
+Veja a página funcionando [clicando aqui](https://gerson-bruno.github.io/estudos/instagram-2022) 🚀
 
-## Tecnologias 🛠️
+## 🛠️ Tecnologias
 
-- HTML5  
-- CSS3  
+- HTML5 ✨  
+- CSS3 🎨  
 
-## Observações ⚠️
+## ⚠️ Observações
 
-- Projeto apenas front-end, sem funcionalidades dinâmicas.
+- **Só front-end**, nada de funcionalidades dinâmicas 😉  
+- Ideal pra estudo e prática de layout.  
