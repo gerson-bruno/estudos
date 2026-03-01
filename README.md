@@ -37,5 +37,5 @@ Outras linguagens e ferramentas podem aparecer conforme novos estudos forem send
 
 ## 📁 Organização
 
-Cada pasta representa um **estudo, exercício ou pequeno projeto** independente.
+Cada pasta representa uma **linguagem ou tecnologia** contendo subpastas com os respectivos estudos organizados por assunto.
 

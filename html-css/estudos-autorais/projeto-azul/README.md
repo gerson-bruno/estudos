@@ -28,7 +28,7 @@ Não é apenas sobre orcas.
 
 ## 🖥️ Visualização
 
-Para visualizar o site, clique [aqui](https://gerson-bruno.github.io/estudos/projeto-azul/) 👈
+Para visualizar o site, clique [aqui](https://gerson-bruno.github.io/estudos/html-css/estudos-autorais/projeto-azul/) 👈
 
 ---
 

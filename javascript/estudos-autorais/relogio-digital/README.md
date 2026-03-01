@@ -5,7 +5,7 @@ Relógio digital simples e responsivo desenvolvido com **HTML**, **CSS** e **Jav
 ---
 
 ## 👀 Preview
-👉 **Para visualizar, [clique aqui](https://gerson-bruno.github.io/estudos/relogio-digital/)**
+👉 **Para visualizar, [clique aqui](https://gerson-bruno.github.io/estudos/javascript/estudos-autorais/relogio-digital/)**
 
 ![Preview do Relógio](img/preview.png)
 

@@ -7,7 +7,7 @@ Calculadora simples **e responsiva** desenvolvida com **HTML**, **CSS** e **Java
 ## 👀 Preview
 ![Preview da Calculadora](img/preview.png)
 
-👉 **Para visualizar online, [clique aqui](https://gerson-bruno.github.io/estudos/calculadora/)**
+👉 **Para visualizar online, [clique aqui](https://gerson-bruno.github.io/estudos/javascript/estudos-autorais/calculadora/)**
 
 ---
 

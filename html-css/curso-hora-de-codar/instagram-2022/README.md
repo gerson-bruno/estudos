@@ -9,7 +9,7 @@ Perfeito pra treinar layout e design responsivo!
 
 ## 🌐 Acesso
 
-Veja a página funcionando [clicando aqui](https://gerson-bruno.github.io/estudos/instagram-2022) 🚀
+Veja a página funcionando [clicando aqui](https://gerson-bruno.github.io/estudos/html-css/curso-hora-de-codar/instagram-2022) 🚀
 
 ## 🛠️ Tecnologias
 

@@ -22,7 +22,7 @@ Um quadro Kanban simples para gerenciamento de tarefas, feito em **HTML, CSS e J
 
 ## 🚀 Acesso Online
 
-Você pode testar a aplicação [clicando aqui](https://gerson-bruno.github.io/estudos/organizador-de-tarefas/)
+Você pode testar a aplicação [clicando aqui](https://gerson-bruno.github.io/estudos/javascript/estudos-autorais/organizador-de-tarefas/)
 
 ---
 

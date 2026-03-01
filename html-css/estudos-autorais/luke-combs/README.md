@@ -6,7 +6,7 @@ Projeto acadêmico desenvolvido para a disciplina de Desenvolvimento Web, com fo
 
 ## 🔗 Acesso ao Projeto
 
-Você pode visualizar a página [aqui](https://gerson-bruno.github.io/estudos/luke-combs).
+Você pode visualizar a página [aqui](https://gerson-bruno.github.io/estudos/html-css/estudos-autorais/luke-combs).
 
 ---
 
