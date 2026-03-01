@@ -8,7 +8,7 @@ A proposta foi praticar a criação de um formulário completo para anúncio de 
 
 ## 🔗 Acesse o projeto
 
-👉 **[Clique aqui](https://gerson-bruno.github.io/estudos/html-css/curso-hora-de-codar/formulario)**
+👉 **[Clique aqui](https://gerson-bruno.github.io/estudos/html-css/curso-hora-de-codar/formulario-venda-seu-carro)**
 
 ---
 
