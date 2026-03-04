@@ -49,11 +49,11 @@ body {
 .banner {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start; 
     justify-content: center;
-    background: rgb(161, 8, 8);
+    background: rgb(161, 8, 8) url("img/header-img.png") no-repeat right center;
+    background-size: contain;
     padding: 150px;
-    
 }
 
 .banner h1 {
