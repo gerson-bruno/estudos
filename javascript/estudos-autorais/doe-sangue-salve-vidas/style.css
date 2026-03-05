@@ -14,13 +14,13 @@ body {
     color: #fff;
 }
 
-.container-header {
+/* HEADER */
+
+.header-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: top;
     max-width: 100%;
-
 }
 
 .logo {
@@ -42,16 +42,18 @@ body {
     gap: 24px;
     font-size: 1.2rem;
 }
+
 .navbar ul li a {
     color: #5d5d5d;
     text-decoration: none;
     transition: color 0.3s ease;
 }
+
 .navbar ul li a:hover {
     color: rgb(161, 8, 8);
 }
 
-.banner {
+.hero-banner {
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
@@ -61,12 +63,12 @@ body {
     padding: 150px;
 }
 
-.banner h1 {
+.hero-banner h1 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
-.banner p {
+.hero-banner p {
     font-size: 1.5rem;
     margin-bottom: 40px;
 }
@@ -91,75 +93,59 @@ body {
     box-shadow: #05050584 0px 2px 4px -1px;
 }
 
-/* Features Section */
-.features{
+/* FEATURES */
+
+.features-section{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2em;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
 }
 
-.features h3{
-    color: #ffffff;
-    text-align: center;
-    margin: 10px auto;
-}
-.features ul{
+.features-section ul{
     display: flex;
     width: 100%;
-    margin: 0 auto;
 }
 
-.features li {
+.features-section li {
     flex: 1;
     list-style: none;
     text-align: center;
     padding: 20px;
 }
 
-.features p{
+.features-section h3,
+.features-section p,
+.features-section i{
     color: #ffffff;
+}
+
+.features-section p{
     text-align: justify;
     margin: 15px auto;
     padding: 5px;
 }
 
-.features i{
+.features-section i{
     font-size: 2.5rem;
-    color: #ffffff;
     margin-bottom: 6px;
-
-}
-.feature-card-1{
-    background-color: #540000;
-    color: #ffffff;
 }
 
-.feature-card-2{
-    background-color: #760000;
-    color: #ffffff;
-}
+/* Individual card colors */
+.feature-card:nth-child(1){ background-color: #540000; }
+.feature-card:nth-child(2){ background-color: #760000; }
+.feature-card:nth-child(3){ background-color: #8d0101; }
+.feature-card:nth-child(4){ background-color: #9c1313; }
 
-.feature-card-3{
-    background-color: #8d0101;
-    color: #ffffff;
-}   
+/* MAIN */
 
-.feature-card-4{
-    background-color: #9c1313;
-    color: #ffffff;
-}
-
-/* Article Section */
 .main-content{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     padding: 32px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 50px;
 }
 
 .article-section h2{
@@ -167,13 +153,11 @@ body {
     text-align: center;
     margin: 10px auto;
 }
+
 .article-section h3{
     color: #8d0101;
-    text-align: left;
     margin: 10px auto;
 }
-
-
 
 .article-section p{
     color: #5e5e5e;
@@ -182,44 +166,38 @@ body {
     padding: 5px;
 }
 
-
-.linha-horizontal {
+.divider {
   width: 90%; 
   height: 2px; 
   background-color: rgb(161, 8, 8); 
   margin: 40px auto; 
   border-radius: 2px; 
   box-shadow: 0 3px 6px rgba(0,0,0,0.2); 
-}  
+}
 
+/* SELECT */
 
-/* Select Section */
-
-.select-container {
-    margin: 0 auto;
+.select-wrapper {
+    margin: 0 auto 40px auto;
     max-width: 400px;
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
     background-color: #540000;
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.select-text h4, 
-.select-text p,
-.select-text label, 
-.select-text select {
+.select-info h4,
+.select-info p {
     color: #ffffff;
     text-align: center;
     margin: 5px auto;
 }
 
-#blood-type {
+#bloodType {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -227,9 +205,9 @@ body {
     width: 50%;
 }
 
+/* FAQ */
 
-/* FAQ Section */
-.faq {
+.faq-section {
   max-width: 800px;
   margin: 60px auto;
   padding: 0 20px;
@@ -240,35 +218,31 @@ body {
   margin-bottom: 35px;
 }
 
-
-
-/* Ícone + texto lado a lado */
-.titulo {
+.faq-title {
   display: inline-flex;
   align-items: center;
   gap: 10px;
 }
 
-/* Linha decorativa abaixo */
-.faq h3::after {
+.faq-section h3::after {
   content: "";
   display: block;
   width: 60px;
   height: 4px;
   background-color: rgb(161, 8, 8);
   border-radius: 2px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
   margin-top: 8px;
 }
 
-.faq p {
+.faq-section p {
   line-height: 1.6;
   font-size: 1rem;
   color: #555;
 }
 
-/*contato*/
-.titulo i {
+/* FORM */
+
+.faq-title i {
   color: rgb(161, 8, 8);
 }
 
@@ -276,8 +250,7 @@ form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 20px auto 0 auto;
   color: #333;
 }
 
@@ -285,6 +258,7 @@ label {
   font-weight: bold;
   margin-bottom: 5px;
 }
+
 input, textarea {
   padding: 10px;
   margin-bottom: 15px;
@@ -292,17 +266,84 @@ input, textarea {
   border-radius: 4px;
   font-size: 1rem;
 }
+
 input:focus, textarea:focus {
   border-color: rgb(161, 8, 8);
   outline: none;
 }
 
+/* FOOTER */
 
-/* footer */
 .footer {
     background-color: #A10808;
     text-align: center;
     padding: 20px 0;
     color: #ffffff;
     font-size: 0.9rem;
+}
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 1024px) {
+
+  .hero-banner {
+    padding: 80px 40px;
+    background-position: center right;
+  }
+
+  .features-section ul {
+    flex-direction: column;
+  }
+
+  .feature-card {
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .hero-banner {
+    padding: 60px 20px;
+    background: rgb(161, 8, 8);
+  }
+
+  .hero-banner h1 {
+    font-size: 2rem;
+  }
+
+  .hero-banner p {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #bloodType {
+    width: 100%;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
 }
