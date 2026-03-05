@@ -77,6 +77,27 @@
                 <p>Também é recomendado estar descansado, alimentado e evitar bebidas alcoólicas nas horas que antecedem a doação. São cuidados simples que ajudam o processo a acontecer com tranquilidade.</p>
                 <p>Se você está saudável e dentro dos critérios básicos, provavelmente pode doar. E se tiver dúvida, o melhor caminho é procurar um hemocentro e se informar. Muitas vezes, a única coisa que separa alguém de salvar vidas é uma pergunta que nunca foi feita.</p>
                 <p>Informar-se é o primeiro passo. Doar é o próximo.</p>
+                <div class="select-container">
+                     <div class="select-text">  
+                        <h4>Verifique aqui seu tipo sanguíneo e veja pra quem você pode doar ou receber sangue:</h4>
+                        <p>Selecione o seu tipo sanguíneo:</p>
+                        </div> 
+                            <select id="blood-type" onchange="showCompatibility()">
+                                <option value="">-- Selecione --</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        
+                    <div class="select-text">                 
+                        <div id="compatibility"></div>
+                    </div>
+            </div>
             </article>
 
             <div class="linha-horizontal"></div>
@@ -137,23 +158,23 @@
                         
                         <form action="form-contact.html" method="POST">
                             <label for="name">Nome:</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" required placeholder="Digite seu nome.">
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required placeholder="Digite seu email.">
                             <label for="message">Mensagem:</label>
-                            <textarea id="message" name="message" required></textarea>
-                            <button type="submit" class="btn">Enviar</button>
+                            <textarea id="message" name="message" required placeholder="Digite sua mensagem."></textarea>
+                            <button type="submit" class="btn" id="submit">Enviar</button>
                         </form>
                 
             </article>
         </section>
     </main>
         <footer class="footer">
-            <p>&copy; 2024 Doe Sangue. Salve Vidas. </p>
+            <p>&copy; <span id="year"></span> - Doe Sangue. Salve Vidas. </p>
             <p>Todos os direitos reservados.</p>
         </footer>
      
 
-    
+<script src="script.js"></script>
 </body>
 </html>

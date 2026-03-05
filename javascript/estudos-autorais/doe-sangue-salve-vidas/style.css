@@ -173,12 +173,15 @@ body {
     margin: 10px auto;
 }
 
+
+
 .article-section p{
     color: #5e5e5e;
     text-align: justify;
     margin: 15px auto;
     padding: 5px;
 }
+
 
 .linha-horizontal {
   width: 90%; 
@@ -189,6 +192,43 @@ body {
   box-shadow: 0 3px 6px rgba(0,0,0,0.2); 
 }  
 
+
+/* Select Section */
+
+.select-container {
+    margin: 0 auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    background-color: #540000;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.select-text h4, 
+.select-text p,
+.select-text label, 
+.select-text select {
+    color: #ffffff;
+    text-align: center;
+    margin: 5px auto;
+}
+
+#blood-type {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 50%;
+}
+
+
+/* FAQ Section */
 .faq {
   max-width: 800px;
   margin: 60px auto;
@@ -200,11 +240,7 @@ body {
   margin-bottom: 35px;
 }
 
-.faq h3 {
-  color: rgb(161, 8, 8);
-  font-size: 1.4rem;
-  margin-bottom: 8px;
-}
+
 
 /* Ícone + texto lado a lado */
 .titulo {
@@ -235,7 +271,6 @@ body {
 .titulo i {
   color: rgb(161, 8, 8);
 }
-
 
 form {
   display: flex;
