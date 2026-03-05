@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- Ícones CDNJS (font-awesome) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
 </head>
 <body>
     <div class="container-header">
@@ -19,14 +21,15 @@
                 <li><a href="#">Início</a></li>
                 <li><a href="#porque-doar">Porque doar</a></li>
                 <li><a href="#quem-pode-doar">Quem pode doar</a></li>
-                <li><a href="#perguntas">Perguntas frequentes</a></li>
-                <li><a href="#" class="default-btn">Quero doar</a></li>
+                <li><a href="#faq">Perguntas frequentes</a></li>
+                <li><a href="#contato">Quero doar</a></li>
             </ul>
         </nav>
         <header class="banner">
             <h1>Doe Sangue. Salve Vidas.</h1>
             <p>Um gesto simples que pode mudar o destino de alguém hoje.</p>
-            <button class="btn">Quero doar</button>
+                <a href="#contato" class="btn">Quero doar</a>
+            
         </header>
     </div>
      <section class="features">
@@ -75,37 +78,80 @@
                 <p>Se você está saudável e dentro dos critérios básicos, provavelmente pode doar. E se tiver dúvida, o melhor caminho é procurar um hemocentro e se informar. Muitas vezes, a única coisa que separa alguém de salvar vidas é uma pergunta que nunca foi feita.</p>
                 <p>Informar-se é o primeiro passo. Doar é o próximo.</p>
             </article>
+
             <div class="linha-horizontal"></div>
-            <article id="perguntas" class="article">
-            <h3>1. Doer sangue faz mal à saúde?</h3>
-            <p>Não. A doação é segura e controlada. Todo material é descartável, e o volume retirado é recuperado pelo corpo rapidamente.</p>
 
-            <h3>2. Com que frequência posso doar?</h3>
-            <p>Homens podem doar a cada 2 meses, mulheres a cada 3 meses. Essa periodicidade garante que a doação seja segura para você.</p>
 
-            <h3>3. Posso doar se estiver tomando algum medicamento?</h3>
-            <p>Depende do remédio e da dose. Na triagem, o profissional irá avaliar caso a caso. Sempre informe todos os medicamentos que está usando.</p>
+            <article class="faq" id="faq">
+                <h2>Perguntas frequentes</h2>
 
-            <h3>4. Existe limite de idade para doar?</h3>
-            <p>Geralmente, é entre 16 e 69 anos. Menores precisam de autorização dos responsáveis. Acima de 60, alguns hemocentros avaliam individualmente.</p>
 
-            <h3>5. Posso doar se estiver gripado ou com febre?</h3>
-            <p>Não. É preciso estar saudável no dia da doação. Sintomas de gripe, febre ou qualquer infecção temporariamente impedem a doação.</p>
+            <div class="faq-item">
+                <h3>
+                <span class="titulo">
+                    <i class="fas fa-heartbeat"></i>
+                    1. Doar sangue faz mal à saúde?
+                </span>
+                </h3>
+                <p>Não. A doação é segura e controlada. Todo material é descartável, e o volume retirado é recuperado pelo corpo rapidamente.</p>
+            </div>
 
-            <h3>6. Quanto tempo dura o processo?</h3>
-            <p>O cadastro e a triagem levam alguns minutos, e a coleta em si dura cerca de 10 minutos. No total, reserve de 40 a 60 minutos.</p>
+            <div class="faq-item">
+                <h3>
+                <span class="titulo">
+                    <i class="fas fa-clock"></i>
+                    2. Com que frequência posso doar?
+                </span>
+                </h3>
+                <p>Homens podem doar a cada 2 meses, mulheres a cada 3 meses. Essa periodicidade garante que a doação seja segura para você.</p>
+            </div>
 
-            <h3>7. Preciso me preparar antes de doar?</h3>
-            <p>Sim. Esteja descansado, bem alimentado e evite álcool nas 12 horas anteriores à doação. Isso ajuda o processo a ser tranquilo e seguro.</p>
+            <div class="faq-item">
+                <h3>
+                <span class="titulo">
+                    <i class="fas fa-pills"></i>
+                    3. Posso doar se estiver tomando medicamento?
+                </span>
+                </h3>
+                <p>Depende do remédio e da dose. Na triagem, o profissional irá avaliar caso a caso. Sempre informe todos os medicamentos que está usando.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>
+                <span class="titulo">
+                    <i class="fas fa-user"></i>
+                    4. Existe limite de idade?
+                </span>
+                </h3>
+                <p>Geralmente, entre 16 e 69 anos. Menores precisam de autorização dos responsáveis. Acima de 60, alguns hemocentros avaliam individualmente.</p>
+            </div>
+            </article>  
+            <div class="linha-horizontal"></div>
+
+            <article id="contato" class="article">
+                <h2>Contato</h2>
+                <span class="titulo">
+                    <i class="fa-solid fa-envelope"></i>
+                <p>Se vocé deseja saber mais sobre doação de sangue ou se tiver alguma dúvida, entre em contato conosco:</p>
+                </span>
+                        
+                        <form action="form-contact.html" method="POST">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="message">Mensagem:</label>
+                            <textarea id="message" name="message" required></textarea>
+                            <button type="submit" class="btn">Enviar</button>
+                        </form>
+                
             </article>
-            <div class="linha-horizontal"></div>
-
-
         </section>
-
-
     </main>
-
+        <footer class="footer">
+            <p>&copy; 2024 Doe Sangue. Salve Vidas. </p>
+            <p>Todos os direitos reservados.</p>
+        </footer>
      
 
     
