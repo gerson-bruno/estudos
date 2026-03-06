@@ -1,1 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(248, 194, 147);
+}
+
+/* Container */
+.container {
+    background-color: #fff;
+    height: 260px;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.container.active{
+    height: 500px;
+}
+
+/* Header */
+#qr-header {
+    text-align: center;
+}
+
+#qr-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#qr-header p {
+    color: #444;
+    font-size: .9rem;
+}
+
+/* Form */
+#qr-form {
+    margin: 20px 15px;
+}
+
+#qr-form input,
+#qr-form button {
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 4px;
+    font-size: .9rem;
+}
+
+#qr-form input {
+    border: 1px solid #a570416f;
+}
+
+#qr-form button {
+    background-color: #f4a460;
+    border: 1px solid #a57041;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 8px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.4s;
+}
+
+#qr-form button:hover {
+    opacity: 1;
+}
+
+/* QR Code */
+#qr-code {
+    display: flex;
+    opacity: 0;
+    padding: 30px 0;
+    margin: 20px 15px;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.container.active #qr-code{
+    opacity: 1;
+}
