@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: rgb(248, 194, 147);
+    background-color: #ece1c3;
 }
 
 /* Container */
@@ -37,7 +37,7 @@ body {
 #qr-header h1 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #795230;
+    color: #063940;
 }
 
 #qr-header p {
@@ -48,24 +48,38 @@ body {
 /* Form */
 #qr-form {
     margin: 20px 15px;
+    text-align: center;
 }
 
-#qr-form input,
-#qr-form button {
+#qr-form input {
     width: 100%;
     height: 55px;
     border: none;
     border-radius: 4px;
     font-size: .9rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #8ebdb6;
+    outline: none;
+    transition: 0.3s;
 }
 
-#qr-form input {
-    border: 1px solid #a570416f;
+#qr-form input:focus {
+    border-color: #195e63;
 }
 
 #qr-form button {
-    background-color: #f4a460;
-    border: 1px solid #a57041;
+    margin: 0 auto;
+    width: 85%;
+    height: 55px;
+    border: none;
+    border-radius: 4px;
+    font-size: .6rem;
+}
+
+#qr-form button {
+    background-color: #3e838c;
+    border: 1px solid #195e63;
     color: #fff;
     font-size: 1.2rem;
     margin-top: 8px;
