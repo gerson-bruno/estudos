@@ -6,7 +6,8 @@
 }
 
 body{
-background-color: rgb(231, 201, 93);
+background: #ffb32f url("bg.png") no-repeat center center fixed;
+background-size: 100vh;
 color: antiquewhite;
 font-family: "Quicksand", sans-serif;
 font-size: 15px;
@@ -18,10 +19,10 @@ header{
 
 section{
 background-color: rgb(252, 248, 244);
-color: rgb(28, 28, 28);
+color: rgb(99, 69, 27);
 border-radius: 6px;
 padding: 15px;
-width: 50%;
+width: 60%;
 margin: auto;
 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.249);
 display: flex;
@@ -40,11 +41,28 @@ div{
     padding: 8px;
 }
 
-.foto{
-    border-radius: 50%;
-    width: 60%;    
-}
 
 h1{
     padding: 10px;
+}
+
+#txtn {
+    border: none;
+    border-bottom: 3px solid #ffb32f;
+    border-radius: 0 0 4px 4px;
+    padding: 2px 8px;     
+    background-color: rgb(252, 248, 244); 
+    color: #aa7821;
+    margin: 0 10px;
+    
+}
+
+#btn {  
+    border: none;         
+    border-left: 3px solid #ffb32f;
+    border-radius: 4px;
+    padding: 2px 8px;     
+    background-color: #eee6cf; 
+    color: #aa7821;
+    cursor: pointer;        
 }
