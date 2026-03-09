@@ -194,6 +194,15 @@ header nav {
     outline: 2px solid #0071e3;
 }
 
+
+#product-image {
+    max-width: 1000px;
+    margin: 3rem auto;
+    opacity: 1;
+    transition: opacity .4s ease;
+}
+
+
 /* Mobile */
 @media (max-width: 480px) {
     #navbar li {
