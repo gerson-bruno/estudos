@@ -8,6 +8,37 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    
+    <div class="container">
+        <div id="cal-container">
+            <h2>Calculadora de IMC</h2>
+            <form id="imc-form">
+                <div class="form-inputs">
+                    <label for="height">Altura:</label>
+                    <input type="text" name="height" id="height" placeholder="Ex: 1.70"></label>
+                </div>
+                <div class="form-control">
+                     <label for="height">Altura:</label>
+                    <input type="text" name="weight" id="weight" placeholder="Ex: 70.5kg"></label>
+                </div>
+                <div class="action-control">
+                    <button id="calc-btn">Calcular</button>
+                    <button id="clear-btn">Limpar</button>
+                </div>
+            </form>
+        </div>
+        <div class="result-container">
+            <p id="imc-number">Seu IMC é: <span></span></p>
+            <p id="imc-info">Situação atual é: <span></span></p>
+            <h3>Confira as classificações:</h3>
+            <div id="imc-table">
+                <div class="table-header">
+                    <h4>IMC</h4>
+                    <h4>Classificação</h4>
+                    <h4>Obesidade</h4>
+                </div>
+            </div>
+            <button id="back-btn">Voltar</button>
+        </div>
+    </div>
 </body>
 </html>
