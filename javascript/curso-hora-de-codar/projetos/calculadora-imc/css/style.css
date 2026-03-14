@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #090e22;
+    background-color: #181848;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ body {
 .container {
     min-width: 400px;
     min-height: 400px;
-    background-color: #1d1e33;
+    background-color: #304878;
     padding: 2rem;
     border-radius: 1rem;
 }
@@ -75,7 +75,7 @@ button {
     border: none;
     cursor: pointer;
     color: #fff;
-    background-color: #f44236;
+    background-color: #f0a818;
     font-weight: bold;
     font-size: 1.2rem;
     opacity: .9;
@@ -87,7 +87,7 @@ button:hover {
 }
 
 #clear-btn {
-    background-color: #444;
+    background-color: #7890a8;
 }
 
 /* Table */
