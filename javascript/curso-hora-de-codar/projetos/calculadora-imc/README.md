@@ -13,8 +13,7 @@ O usuário informa **altura e peso**, e a aplicação calcula automaticamente o 
 
 ## 🚀 Acessar o projeto
 
-👉 **Clique aqui para testar:**  
-🔗 https://gerson-bruno.github.io/estudos/javascript/curso-hora-de-codar/projetos/calculadora-imc/
+👉 **Clique [aqui](https://gerson-bruno.github.io/estudos/javascript/curso-hora-de-codar/projetos/calculadora-imc/) para testar!**  
 
 ---
 
@@ -75,4 +74,4 @@ Esse projeto foi desenvolvido para praticar:
 Desenvolvido por **Gerson Bruno**
 
 - GitHub: [@gerson-bruno](https://github.com/gerson-bruno)
-- LinkedIn: [@gerson-bruno](https://linkedin.com/in/gerson-bruno)
+- LinkedIn: [@gerson-bruno](https://www.linkedin.com/in/gerson-bruno-baptista/)
