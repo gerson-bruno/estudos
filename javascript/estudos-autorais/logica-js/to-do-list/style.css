@@ -1,5 +1,56 @@
+body {
+    background-color: firebrick;
+    color: brown;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    background-color: rgb(241, 241, 241);
+    padding: 24px;
+    max-width: 480px;
+    margin: 0 auto;
+    border-radius: 8px;
+
+}
+
+.inputtxt {
+    border: solid 1px brown;
+    background-color: rgb(241, 241, 241);
+    color: brown;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.inputtxt:focus {
+    border: solid 1px brown;
+    background-color: rgb(241, 241, 241);
+    color: brown;
+    border-radius: 4px;
+    padding: 4px;
+}
+
 li {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 2px;
+    color: rgb(63, 7, 7);
+}
+
+button {
+    color:rgb(241, 241, 241);
+    background-color: brown;
+    margin: 2px;
+    margin-left: 10px;
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+    opacity: .9;
+    transition: .3s;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 1;
 }
