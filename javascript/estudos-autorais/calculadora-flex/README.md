@@ -10,6 +10,12 @@ Uma calculadora simples pra te ajudar a decidir se vale mais a pena abastecer co
 
 ---
 
+## 🌐 Acesse Online
+
+[Veja a calculadora funcionando aqui](https://gerson-bruno.github.io/estudos/javascript/estudos-autorais/calculadora-flex)  
+
+---
+
 ## 💻 Funcionalidades
 
 - 🛢️ Insira o preço do **Etanol** e da **Gasolina**.  
