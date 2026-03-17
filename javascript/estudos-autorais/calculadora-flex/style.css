@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +12,7 @@ body{
     align-items: center;
     height: 100vh;
     background-color: #EE394E;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 #container{
@@ -53,4 +55,11 @@ button{
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    opacity: .9;
+}
+
+button:hover{
+    opacity: 1;
 }

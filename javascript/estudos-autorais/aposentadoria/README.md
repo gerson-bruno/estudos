@@ -40,5 +40,5 @@ Implementar uma regra de negócio simples (verificação de elegibilidade para a
 
 Projeto parte de uma série de exercícios práticos focados em consolidar fundamentos de desenvolvimento front-end antes da transição para aplicações mais complexas.
 
-Para maiores detalhes, [clique aqui.](https://gerson-bruno.github.io/estudos/javascript/estudos-autorais/logica-js/aposentadoria)
+Para maiores detalhes, [clique aqui.](https://gerson-bruno.github.io/estudos/javascript/estudos-autorais/aposentadoria)
 

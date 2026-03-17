@@ -48,5 +48,5 @@ Permitir que o usuário insira três notas, calcular a média automaticamente e 
 Projeto desenvolvido como parte dos estudos em desenvolvimento front-end, com foco em consolidar fundamentos antes de avançar para aplicações mais complexas.
 
 
-Para maiores detalhes, [clique aqui.](https://gerson-bruno.github.io/estudos/javascript/estudos-autorais/logica-js/media-escolar)
+Para maiores detalhes, [clique aqui.](https://gerson-bruno.github.io/estudos/javascript/estudos-autorais/media-escolar)
 
