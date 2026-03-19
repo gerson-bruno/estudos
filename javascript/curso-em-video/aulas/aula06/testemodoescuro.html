@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste modo escuro</title>
+    <style>
+    body{
+        background-color: rgb(69, 127, 154);}
+    .dark{
+        background-color: rgb(13, 24, 29); }
+    .dark_mode{
+        background-color: blueviolet;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>modo escuro</h1>
+    <button id="dark" class="dark_mode">Modo Escuro</button>
+     <script>
+        let botao = document.querySelector('button#dark')
+        botao.addEventListener('click', function(){
+        document.body.classList.toggle('dark')
+        })
+    </script>
+    
+</body>
+</html>

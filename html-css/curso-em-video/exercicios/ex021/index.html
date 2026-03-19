@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        body
+        {
+            background-color: rgba(0, 0, 0, 0.075);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+        h1
+        {
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #aaa;
+            background-color: navy;
+            border-radius: 12px;
+            box-shadow: #211c80 5px 5px 5px;
+
+        }
+        h2
+        {
+            text-align: center;
+            text-shadow: 2px 2px 4px #aaa;
+            color: #211c80;
+        }
+        ul li
+        {
+            list-style-type:decimal-leading-zero;
+            list-style-position: inside;
+            text-align: left;
+            border: 1px solid rgba(0, 0, 0, 0.307);
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+            background-color: rgba(0, 0, 0, 0.075);
+        }
+        p
+        {
+            text-align: justify;
+            text-indent: 20px;
+            line-height: 1.5em;
+        }
+        p::first-letter
+        {
+            text-transform: uppercase;
+            font-size: 1.2em;
+            color: #1108c6;
+            font-style: strong;
+        }
+        li::marker
+        {
+            color: #1108c6;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- Aninhamento de caixas -->
+    <h1>Exemplo de caixa </h1>
+    <p> Todo elemento vísivel em um site esta dentro de uma caixa.</p>
+    <p>Todo elemento tem o CONTEUDO (TEXTO/IMAGEM) e uma BORDA (BORDER), entre o conteudo e a borda é possível criar um PADDING que funciona como um espaço para o conteudo não 'ficar grudado' na borda, ja entre a borda e a borda do proximo conteudo existe uma MARGIN. Fora da BORDA podemos criar um traçado, que denomina-se OUTLINE</p>
+    <img src="../../imgs/boxmodel.png" alt="BOXMODEL" style="display: block; margin: 0 auto ";>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de inline-level</a>. <br>
+    Vamos ver como tudo isso funciona.</p>
+    <p>Caixas box-level sempre ocupam toda a largura da tela e iniciam em uma nova linha. Ja caixas inline-level sempre ocupam o tamanho do conteudo e iniciam em mesma linha</p>
+    <p>EXEMPLOS: A tag div é uma caixa box-level e a tag span é uma caixa inline-level</p>
+    <h2>Exemplos de caixas box-level</h2>
+    <ul>
+        <li>DIV</li>
+        <li>H1 ao H6</li>
+        <li>P</li>
+        <li>MAIN</li>
+        <li>HEADER</li>
+        <li>SECTION</li>
+        <li>ARTICLE</li>
+        <li>ASIDE</li>
+        <li>NAV</li>
+        <li>FOOTER</li>
+        <li>FORM</li>
+        <li>VIDEO</li>
+    </ul>
+    <h2>Exemplos de caixas inline-level</h2>
+    <ul>
+        <li>SPAN</li>
+        <li>A</li>
+        <li>EM</li>
+        <li>STRONG</li>
+        <li>TIME</li>
+        <li>INPUT</li>
+        <li>SELECT</li>
+        <li>TEXTAREA</li>
+        <li>CODE</li>
+        <li>BUTTON</li>
+        <li>SUP - SUB</li>
+    </ul>
+</body>
+</html>

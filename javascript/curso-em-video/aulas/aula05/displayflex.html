@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+    background-color: rgb(154, 105, 69);
+    color: rgb(255, 255, 255);
+    font: normal 16px arial;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(228, 141, 86);
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    width: 67%;
+    margin: 0px auto;
+}
+
+main{
+    justify-content: center;
+}
+
+h1{
+    color: rgb(6, 64, 180);
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    font-family: "SN Pro", sans-serif;
+    font-size: 3em;
+}
+
+.post h2,
+.side h3{
+    color: rgb(255, 255, 255);
+    background-color: saddlebrown;
+    border-radius: 15px 15px 0 0;
+    text-align: left;
+    padding: 10px;
+    font-family: "SN Pro", sans-serif;
+    font-size: 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    margin: 0 10px;
+}
+
+nav a{
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    font-family: "SN Pro", sans-serif;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+    width: 50%;
+    
+}
+
+.post{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 20%;
+}
+
+.side{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    padding: 15px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Flex Box</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+    <section class="posts">
+        <article class="post">
+            <h2>Post 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cupiditate numquam laborum nesciunt, et consequatur a voluptatem eveniet, esse id voluptas, tenetur itaque nihil quos ea. Minima autem culpa eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga expedita alias quisquam, cum natus quam labore cumque vitae velit dolorum itaque necessitatibus dolorem deserunt! Unde nobis cumque ea consequuntur ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, inventore voluptates quos nisi, porro labore illo dolorum iusto quibusdam vel error unde iste! Repudiandae amet fugit accusamus maiores nemo similique.</p>
+        </article>
+        <article class="post">
+            <h2>Post 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum quam ex laboriosam adipisci aliquid dolor expedita nobis! Doloribus quasi enim quisquam voluptate, consequuntur temporibus illo fugiat placeat non odio ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corporis molestias cum officia! Doloremque laboriosam nulla, nemo quisquam reprehenderit iure nam nihil cum numquam, excepturi optio! Nihil velit enim eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit adipisci dignissimos doloribus ab, minima dolores tempora magni laudantium laborum impedit! Alias aut ab ea inventore voluptates. Cumque, libero nobis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sit consectetur veniam, dolore vero qui, quis officiis distinctio soluta deleniti animi quam illum pariatur laboriosam cum rerum tenetur dignissimos omnis.</p>
+        </article>
+        </section>
+    
+    <section class="sidebar">
+       <article class="side">
+        <h3>Sidebar</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia. labore illo dolorum iusto quibusdam vel error unde iste! Repudiandae amet fugit accusamus maiores nemo similique.</p></article>
+        <article class="side">
+        <h3>Sidebar 2</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sint minus porro molestias inventore dicta ad, esse facere ut! Vero quia voluptatibus iure harum quod voluptates, blanditiis assumenda neque nihil! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quas cupiditate animi vero mollitia, deleniti sed veritatis aperiam voluptate quibusdam, atque enim voluptatum quae adipisci eveniet ratione saepe praesentium ipsum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quaerat error, fugit saepe quo neque rem a. Enim accusamus, a eos libero possimus beatae vitae adipisci? Ad repellendus ex dicta.
+        </p></article>
+    </section>
+    </main>
+
+
+</body>
+
+</html>

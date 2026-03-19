@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited{
+    color: darkred;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    color: yellow;
+}
+a::after{
+    content: ' [link]';
+    text-decoration: none;
+    font-weight: normal;
+    color: darkgray;
+}
+
+.especial{
+    background-color: rgba(95, 129, 179, 0.727);
+    color: thistle;
+    text-decoration: none;
+}
+
+.emoji::after{
+    content: '🤝';
+}
+
+/*pseudo-elementos, deixando a primeira letra do paragrafo vermelha e alterando o tamanho*/
+p::first-letter{
+    color: red;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+h3::after{
+    content: '🤝';
+}
+
+</style>
+    <!--
+    # = id
+    . = class
+    : = pseudo-class
+    :: = pseudo-element
+
+    ----- A estilização dos links devem seguir uma ordem, caso contrario o efeito não irá funcionar.
+
+    --- pseudo-class:
+    1) link - padrao
+    2) visited - quando o link foi visitado
+    3) hover - quando o mouse passa por cima
+    4) active - quando o link foi clicado
+
+    --- pseudo-element:
+    ::after - adiciona algo depois do elemento
+    ::before - adiciona algo antes do elemento
+    ::first-letter - muda a primeira letra
+    ::first-line - muda a primeira linha
+    ::maker - muda os marcadores
+    ::selection - muda o texto selecionado
+    
+    -->
+</head>
+<body>
+    <h1>teste</h1>
+    <p>haahahah</p>
+    <a href="https://instagram.com" target="_blank">instagram</a><br>
+    <a href="https://facebook.com" target="_blank" class="especial">facebook</a>
+    <h2>dasdasda</h2>
+    <h3>Aqui os H3 ficam com um emoji ao final </h3>
+    <h3>todos os h3 ficaram com o emoji definido acima
+    </h3>
+    <p class="emoji">O paragráfo também ficou com o emoji</p>
+</body>
+</html>

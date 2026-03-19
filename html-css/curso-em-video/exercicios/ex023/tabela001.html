@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            margin: 0 auto;
+            text-align: center;
+            color: #111111c8;
+            padding: 20px;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th{
+            background-color: gray;
+            color: white;
+        }
+        tr.linha{
+            background-color: rgb(179, 179, 179);
+            color: white;
+        }
+        td.linha{
+            background-color: rgb(43, 144, 233);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1>
+    <!-- Hierarquia de tabela simples
+     TABBLE > TR (linha) > TH (cabecalho) > TD (dados) -->
+    <table>
+        <tr> <!-- Primeira linha -->
+            <td>A1</td> <!-- Dados da primeira coluna -->
+            <td>B1</td> <!-- Dados da segunda coluna -->
+            <td>C1</td> <!-- Dados da terceira coluna -->
+        </tr>
+        <tr class="linha"> <!-- Segunda linha -->
+            <td>A2</td> <!-- Dados da primeira coluna -->
+            <td>B2</td> <!-- Dados da segunda coluna -->
+            <td>C2</td> <!-- Dados da terceira coluna -->
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td>A3</td> <!-- Dados da primeira coluna -->
+            <td class="linha">B3</td> <!-- Dados da segunda coluna -->
+            <td>C3</td> <!-- Dados da terceira coluna -->
+        </tr>
+        <tr class="linha"> <!-- Quarta linha -->
+            <td>A4</td> <!-- Dados da primeira coluna -->
+            <td>B4</td> <!-- Dados da segunda coluna -->
+            <td>C4</td> <!-- Dados da terceira coluna -->
+        </tr>
+
+        <!-- O fechamento de TR e TD no HTML5 é opcional, mas é fortemente recomendado pra melhorar a organização do código -->
+
+    </table>
+
+
+
+</body>
+</html>

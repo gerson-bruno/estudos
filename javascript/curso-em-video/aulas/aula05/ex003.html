@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body{
+            background-color: rgb(154, 105, 69);
+            color: rgb(255, 255, 255);
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá mundo do JavaScript!</h1>
+    <p>Aprendendo JavaScript</p>
+
+    <script>
+        /*
+        var n1 = window.prompt('Digite um numero: ') 
+        var n2 = window.prompt('Digite outro número: ')
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} vale ${s}`)
+
+        Aqui ele faz a soma entre os dois numeros digitados, porem retorna uma string... se vc digitar 5 e depois 5, ele vai concatenar 55.
+        Para que de fato ocorra uma soma é preciso utilizar o comando Number.parseInt(n) ou Number.parseFloat(n) para converter a string em um numero. */
+
+        var n1 = Number.parseInt(window.prompt('Digite um numero: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} vale ${s}.`)
+
+        /* Caso você queira simplificar, pode usar apenas Number(n) que o próprio JS irá converter para number e fazer a soma. Porém é importante saber os métodos pois em alguns casos você precisa usar o parseInt ou parseFloat para limitar o usuário. */
+        /* Caso queira converter de número pra STRING é só usar o comando String(n) ou o comando n.toString() */
+
+    </script>
+    
+</body>
+</html>

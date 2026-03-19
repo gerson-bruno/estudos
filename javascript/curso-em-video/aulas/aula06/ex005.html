@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(69, 127, 154);
+            color: rgb(255, 255, 255);
+            font: normal 18pt Georgia;
+            min-width: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dark{
+            background-color: rgb(13, 24, 29);
+            color: rgb(31, 61, 169);
+        }
+
+        .dark_mode{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: rgb(8, 20, 34);
+            color: rgb(255, 255, 255);
+        }
+
+        .bcontainer{
+            display: flex;
+            justify-content: right; 
+        }
+
+        .container{
+            background-color: rgba(255, 255, 255, 0.182);
+            margin: 15px;
+            text-align: justify;
+            padding: 15px;
+            border-radius: 10px;
+            width: 70%;
+            margin: 15px auto;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="bcontainer">
+    <button id="dark" class="dark_mode">Modo Escuro</button></div>
+
+    <section class="container">
+    <h1>Iniciando estudos com o DOM</h1>
+    <h3><strong>D</strong>ocument <strong>O</strong>bject <strong>M</strong>odel</h3>
+    <p>Aqui vai o resultado:</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    
+
+    <script>
+        /* let botao = document.getElementById('dark')
+        botao.addEventListener('click', function(){
+        document.body.classList.toggle('dark')
+        }) */
+        
+        let botao = document.querySelector('button#dark')
+        botao.addEventListener('click', function(){
+        document.body.classList.toggle('dark')
+        })
+    </script>
+    </section>
+</body>
+</html>

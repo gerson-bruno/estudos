@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de celulas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        #container{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+            <td rowspan="3">C</td>
+        </tr>
+        <tr>
+            <td rowspan="2">D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td colspan="4">I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td colspan="2">L</td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>N</td>
+            <td>O</td>
+            <td rowspan="2">P</td>
+        </tr>
+        <tr>
+            <td>Q</td>
+            <td>R</td>
+            <td>S</td>
+        </tr>
+    </table>
+<br> <br> <br> <br>
+<div id="container">
+    <table>
+        <thead>
+            <tr>
+                <td>Grupo</td>
+                <td>Nomes</td>
+                <td colspan="3">Filmes</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Mulheres</td>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Homens</td>
+                <td>Roberto Carlos</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <td>Alexandre</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <td>Guilherme</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+    </table>
+</div>
+</body>
+</html>

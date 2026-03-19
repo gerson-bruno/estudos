@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/* tudo o que em HTML é id em CSS é #  */
+/* tudo o que em HTML é class em CSS é .  */
+/* o ID só pode ser usado 1x no HTML, a class pode ser usado mais de 1x, ou seja, caso queira que mais de um elemento tenha determidado estilo usa-se a class ao invés do id, o ID é apenas para coisas pontuais e unicas */
+
+body {
+    background-color: rgba(176, 176, 176, 0.408);
+    color: rgb(62, 62, 62);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(29, 28, 49);
+}
+h1#principal {
+    text-align: center;
+    background-color: rgba(29, 28, 49, 0.367);
+    color: white;
+}
+h2 {
+    color: rgb(48, 73, 113);
+}
+
+.intermediario {
+    color: rgb(34, 82, 158);
+}
+.avancado {
+    color: rgb(2, 10, 23);
+    font-weight: bold;
+}
+.destaque {
+    background-color: rgba(255, 162, 0, 0.422);
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Principais formatações:</h1>
+    <h2>Negrito / Destaque:</h2>
+
+    <p>Para deixar uma palavra em negrito podemos utilizar a tag <strong>strong</strong> ou a tag <b>B</b>.</p>
+    <p>A tag <b>B</b> é uma tag de formatação não semântica, enquanto a tag <strong>strong</strong> é uma tag de formatação semântica que indica importância.</p>
+    <p>Ou seja, a tag <strong>strong</strong> é preferível quando se deseja transmitir importância semântica ao conteúdo. Pois a tag B não tem forma. </p>
+
+    <h2>Itálico:</h2>
+    <p>Para deixar uma palavra em itálico podemos utilizar a tag <em>em</em> ou a tag <i>I</i>.</p>
+    <p>A tag <i>I</i> é uma tag de formatação não semântica, enquanto a tag <em>em</em> é uma tag de formatação semântica que indica ênfase.</p>
+    <p>Ou seja, a tag <em>em</em> é preferível quando se deseja transmitir ênfase semântica ao conteúdo. Pois a tag I não tem forma. </p>
+
+    <h3>Na prática:</h3>
+    <p>Visualmente, as duas não têm diferença. Porém de quando trabalhamos de forma profissional ao desejar realizar um destaque uma palavra ou frase, é recomendável usar a tag <strong>strong</strong> para negrito e <em>em</em> para itálico. 
+        <br>
+        Agora caso o texto seja inteiro em negrito ou em itálico utiliza-se a tag <b>B</b> ou <i>I</i>, respectivamente.</p>
+
+    <h2>Texto marcado:</h2>
+    <p>Para marcar um texto podemos utilizar a tag <mark>mark</mark>. Ela é utilizada para destacar partes importantes do texto, como em pesquisas ou estudos.</p>
+    <p>Caso queira mudar a cor da marcação, pode usar CSS para personalizar a aparência da <mark>tag</mark>.</p>
+    <p>Para isso basta adicionar dentro da tag <mark style="background-color: rgb(62, 156, 223);">mark</mark> o estilo (style) com a cor do background desejado, como no exemplo dessa frase.</p>
+    <p>É importante lembrar que a tag <mark>não herda a cor utilizada anteriormente personalizada por CSS</mark>.</p>
+    <p>Caso queira mudar a cor de <strong>todas as marcações da mesma página</strong> utilizando <mark>mark</mark>, 
+        <br>
+    é preciso utilizar o style do CSS dentro da tag head (início do código HTML), como exemplo na imagem abaixo:</p>
+    <img src="01.png" alt="Exemplo de CSS para tag mark">
+    <br>
+    <p>Caso queira deixar o texto pequeno, pode usar a tag <small>small</small>. <br>
+    <small>Por exemplo para colocar alguma informação importante ou um comentário.</small><br>
+Ja o texto maior era-se utilizado a tag <big>big</big>. Porém ela esta obsoleta, e pode a qualquer momento perder a função <small>(não é recomendado a utilização de tags obsoletas)</small>.</p>
+<p>
+    Clicando <a href="https://www.w3.org/TR/2014/REC-html5-20141028/obsolete.html">aqui</a> podemos ver a lista de tags obsoletas no momento presente e acompanhar atualizações futuras. 
+    <br>
+    Este é o site oficial do W3C (World Wide Web Consortium), que é a principal organização responsável pela padronização da web e desenvolvimento do HTML.
+</p>
+<h2>Texto deletado:</h2>
+<p>Para deletar um texto, pode-se utilizar a tag <del>del</del>. Ela é utilizada para marcar partes do texto que foram excluídas ou removidas.</p>
+<p>Por exemplo, se você estivesse escrevendo um documento e precisasse apagar uma parte do conteúdo, poderia usar a tag <del>del</del> para indicar que aquela parte foi removida.</p>
+<p>Sendo assim a tag DEL basicamente <del>risca</del> o texto.</p>
+
+<h2>Texto inserido:</h2>
+<p>Para inserir um texto, pode-se utilizar a tag <ins>ins</ins>. Ela é utilizada para marcar partes do texto que foram adicionadas ou inseridas.</p>
+<p>Por exemplo, se você estivesse escrevendo um documento e precisasse adicionar uma parte do conteúdo, poderia usar a tag <ins>ins</ins> para indicar que aquela parte foi adicionada.</p>
+<p>Sendo assim a tag INS basicamente <ins>sublinha</ins> o texto.</p>
+<p>De forma não semântica para sublinhar um texto pode-se utilizar a tag <u>u</u>.</p>
+<p>Desta forma as tags <strong>strong</strong>, <em>em</em>, <mark>mark</mark>, <del>del</del>, e <ins>ins</ins> são preferíveis por serem semânticas, enquanto as tags <b>B</b>, <i>I</i>, e <u>U</u> são não semânticas.</p>
+
+<h2>Texto sobrescrito:</h2>
+<p>Para escrever um texto sobrescrito, pode-se utilizar a tag <sup>sup</sup>. Ela é utilizada para marcar partes do texto que estão acima da linha normal, como em fórmulas matemáticas ou símbolos químicos.</p>
+<p>Por exemplo, se você estivesse escrevendo uma fórmula química, poderia usar a tag <sup>sup</sup> para indicar que o número está elevado.</p>
+<p>Sendo assim a tag SUP basicamente coloca o texto acima da linha normal.</p>
+<p>Exemplo em equação matemática: x<sup>3</sup> (x ao cubo).</p>
+
+<h2>Texto subscrito:</h2>
+<p>Para escrever um texto subscrito, pode-se utilizar a tag <sub>sub</sub>. Ela é utilizada para marcar partes do texto que estão abaixo da linha normal, como em fórmulas matemáticas ou símbolos químicos.</p>
+<p>Por exemplo, se você estivesse escrevendo uma fórmula química, poderia usar a tag <sub>sub</sub> para indicar que o número está em um composto químico.</p>
+<p>Sendo assim a tag SUB basicamente coloca o texto abaixo da linha normal.</p>
+<p>Exemplo em um símbolo químico: H<sub>2</sub>O.</p>
+
+</body>
+</html>

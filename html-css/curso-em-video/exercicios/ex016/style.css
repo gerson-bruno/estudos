@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+*{ /*Aplica no CSS TODO*/
+    height: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+}
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #d4cdc5;
+        }
+        h1 {
+            color: #243a69;
+            text-align: center; 
+            width: 50%;
+            background-color: #37579c53;
+            border-radius: 10px;
+            text-shadow: 1px 1px 5px #d4cdc55a; /*SOMBRA NO TEXTO*/
+            
+        }
+        h2 {
+            color: #5b88a5;
+            background-color: #5b87a55e;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        h3 {
+            color: #5b87a5b5;
+        }
+        p {
+            color: #191013;
+            text-align: justify;
+        }
+main {
+    background-color: #f4f4f265;
+    width: 50%; /*Define até onde o texto que esta dentro da tag irá no site*/
+    padding: 25px; /*Define a distancia do texto para a borda*/
+    border-radius: 10px; /*Define se a borda será aredondada*/
+    box-shadow: 3px 5px 10px rgba(91, 135, 165, 0.205); /*Define a sombra da caixa, o primeiro é quanto essa sombra ira para o lado, o segundo para baixo e o terceiro o quanto vai se espalhar (quanto menor o numero, mais dura a sombra), a transparencia pode ser adicionada no seletor de cor*/
+    margin:auto; /*Centraliza o elemento*/
+}
