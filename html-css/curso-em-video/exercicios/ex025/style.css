@@ -12,13 +12,27 @@ justify-content:center;
 align-items:center;
 height:100vh;
 color: #132b2e;
+padding: 0 120px; 
+}
+
+.wrapper{
+  display:flex;
+  align-items:center;
+  align-items:stretch; 
+}
+
+.img {
+  width:720px;
+  background:url("img/social.png") no-repeat center/cover;
+  border-radius:8px 0 0 8px;
+  opacity: .6;
 }
 
 .container{
 background:white;
 opacity: .8;
 padding:40px;
-border-radius:8px;
+border-radius:0 8px 8px 0;
 width:100%;
 max-width:400px;
 box-shadow:0 5px 20px rgba(0,0,0,0.1);
