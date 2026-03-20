@@ -1,51 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reabilitação Visual PRO</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
 <body>
 
-<h1>Reabilitação Visual</h1>
+<div class="app">
 
-<ul class="exercise-list">
-<li onclick="selectExercise('saccade')">Sacadas <small>(Saccades)</small><span class="icon" onclick="showInfo(event,'saccade')">❓</span></li>
-<li onclick="selectExercise('smooth')">Seguimento Suave <small>(Smooth)</small><span class="icon" onclick="showInfo(event,'smooth')">❓</span></li>
-<li onclick="selectExercise('vertical')">Vertical<span class="icon" onclick="showInfo(event,'vertical')">❓</span></li>
-<li onclick="selectExercise('diagonal')">Diagonal<span class="icon" onclick="showInfo(event,'diagonal')">❓</span></li>
-<li onclick="selectExercise('vor')">VOR x1<span class="icon" onclick="showInfo(event,'vor')">❓</span></li>
-<li onclick="selectExercise('optokinetic')">Optocinético<span class="icon" onclick="showInfo(event,'optokinetic')">❓</span></li>
-<li onclick="selectExercise('random')">Alvo Aleatório<span class="icon" onclick="showInfo(event,'random')">❓</span></li>
-</ul>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>Exercícios</h2>
 
-<div id="exercise-area" onclick="hitTarget()">
-<div id="optokinetic"></div>
-<div id="ball"></div>
-</div>
+        <ul class="exercise-list">
+            <li onclick="selectExercise(event,'saccade')">Sacadas <small>(Saccades)</small><span class="icon" onclick="showInfo(event,'saccade')">❓</span></li>
+            <li onclick="selectExercise(event,'smooth')">Seguimento Suave <small>(Smooth)</small><span class="icon" onclick="showInfo(event,'smooth')">❓</span></li>
+            <li onclick="selectExercise(event,'vertical')">Vertical<span class="icon" onclick="showInfo(event,'vertical')">❓</span></li>
+            <li onclick="selectExercise(event,'diagonal')">Diagonal<span class="icon" onclick="showInfo(event,'diagonal')">❓</span></li>
+            <li onclick="selectExercise(event,'vor')">VOR x1<span class="icon" onclick="showInfo(event,'vor')">❓</span></li>
+            <li onclick="selectExercise(event,'optokinetic')">Optocinético<span class="icon" onclick="showInfo(event,'optokinetic')">❓</span></li>
+            <li onclick="selectExercise(event,'random')">Alvo Aleatório<span class="icon" onclick="showInfo(event,'random')">❓</span></li>
+        </ul>
+    </aside>
 
-<div class="controls">
+    <!-- MAIN -->
+    <main class="main">
 
-<select id="speed">
-<option value="2">Lento</option>
-<option value="5">Médio</option>
-<option value="10">Rápido</option>
-</select>
+        <div id="exercise-area" onclick="hitTarget()">
+            <div id="optokinetic"></div>
+            <div id="ball"></div>
+        </div>
 
-<select id="time">
-<option value="30">30s</option>
-<option value="60">1 min</option>
-<option value="120">2 min</option>
-</select>
+        <div class="controls">
 
-<br>
+            <select id="speed">
+                <option value="2">Lento</option>
+                <option value="5">Médio</option>
+                <option value="10">Rápido</option>
+            </select>
 
-<button onclick="start()">Iniciar</button>
-<button onclick="stop()">Parar</button>
-<button onclick="fullscreen()">Tela Cheia</button>
+            <select id="time">
+                <option value="30">30s</option>
+                <option value="60">1 min</option>
+                <option value="120">2 min</option>
+            </select>
 
-<div id="timer">Tempo: 0</div>
-<div id="score"></div>
+            <br>
+
+            <button onclick="start()">Iniciar</button>
+            <button onclick="stop()">Parar</button>
+            <button onclick="fullscreen()">Tela Cheia</button>
+
+            <div id="timer">Tempo: 0</div>
+            <div id="score"></div>
+
+        </div>
+
+    </main>
 
 </div>
 
 <div id="modal" class="modal" onclick="closeModal()">
-<div class="modal-content" id="modal-text"></div>
+    <div class="modal-content" id="modal-text"></div>
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
