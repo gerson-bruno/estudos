@@ -1,0 +1,180 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #e5e7eb;
+    text-align: center;
+    padding: 20px;
+}
+
+/* TÍTULO */
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* LISTA */
+.exercise-list {
+    list-style: none;
+    max-width: 350px;
+    margin: 0 auto 20px;
+}
+
+.exercise-list li {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.exercise-list li:hover {
+    background: rgba(0,212,255,0.15);
+    border-color: #00d4ff;
+}
+
+/* TEXTO */
+small {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+/* ÍCONE */
+.icon {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.icon:hover {
+    opacity: 1;
+}
+
+/* ÁREA DO EXERCÍCIO */
+#exercise-area {
+    margin: 20px auto;
+    width: 340px;
+    height: 340px;
+    background: radial-gradient(circle, #020617, #000);
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+/* BOLINHA */
+#ball {
+    width: 18px;
+    height: 18px;
+    background: #00d4ff;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 15px #00d4ff;
+}
+
+/* OPTOKINETICO */
+#optokinetic {
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        90deg,
+        #ffffff 0px,
+        #ffffff 60px,
+        #000000 60px,
+        #000000 120px
+    );
+    display: none;
+}
+
+/* CONTROLES */
+.controls {
+    margin-top: 15px;
+}
+
+/* BOTÕES */
+button {
+    background: #00d4ff;
+    color: #000;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #22e0ff;
+}
+
+/* SELECT */
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin: 5px;
+    background: #1e293b;
+    color: #fff;
+}
+
+/* TIMER */
+#timer {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #94a3b8;
+}
+
+/* SCORE */
+#score {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #38bdf8;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    background: #020617;
+    padding: 20px;
+    margin: 30% auto;
+    width: 85%;
+    max-width: 400px;
+    border-radius: 12px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* FULLSCREEN */
+#exercise-area:fullscreen {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    cursor: none;
+}
+
+#exercise-area:fullscreen #ball {
+    width: 40px;
+    height: 40px;
+}
