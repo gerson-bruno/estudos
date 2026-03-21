@@ -4,7 +4,7 @@ O **VestibuTrain** é uma ferramenta interativa desenvolvida em JavaScript volta
 
 🚀 **Acesse o projeto:** [VestibuTrain Online](https://gerson-bruno.github.io/estudos/javascript/estudos-autorais/reabilitacao-visual/)
 
-![Preview do Projeto](./preview.png)
+![Preview do Projeto](img/preview.png)
 
 ## 🎯 Objetivo
 O software simula exercícios oculares clássicos utilizados em clínicas de reabilitação, permitindo que o usuário treine a musculatura ocular e o reflexo vestíbulo-ocular (VOR) de forma controlada, ajustando velocidade e tempo de execução.
