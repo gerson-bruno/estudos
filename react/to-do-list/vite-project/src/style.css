@@ -1,0 +1,25 @@
+:root{
+    --cinza: #ebebec;
+    --preto: #272727;
+    --azul: #00BFFF;
+    --verde: #36b59f;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cinza);
+}
+
+body, input, textarea, button {
+    font-size: 1rem;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 400;
+}
