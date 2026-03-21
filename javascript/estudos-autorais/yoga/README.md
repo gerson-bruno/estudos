@@ -8,13 +8,13 @@ O projeto tem como foco transmitir a essência do yoga de forma mais profunda, i
 
 ## 📷 Preview
 
-![Preview da página](img/preview.png)
+![Preview da página](img/preview.jpg)
 
 ---
 
 ## 🔗 Acesso
 
-👉 https://gerson-bruno.github.io/estudos/javascript/estudos-autorais/yoga/
+👉 Para vizualizar o projeto clique [aqui.](https://gerson-bruno.github.io/estudos/javascript/estudos-autorais/yoga/)
 
 ---
 
