@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
 margin:0;
 padding:0;
@@ -5,8 +7,9 @@ box-sizing:border-box;
 }
 
 body {
-font-family: Arial;
+font-family: "Roboto Condensed", sans-serif;
 background: linear-gradient(135deg,#e2e8f0,#f8fafc);
+color: #0a1a2e;
 }
 
 /* LAYOUT */
@@ -24,8 +27,33 @@ backdrop-filter: blur(10px);
 border-right:1px solid rgba(0,0,0,0.1);
 }
 
-.sidebar h2 {
-margin-bottom:15px;
+.logo {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 150px;
+}
+
+
+.sidebar h1 {
+margin-bottom:10px;
+text-align: center;
+}
+
+.sidebar h1 .title-1 {
+color:#103258;
+}
+
+.sidebar h1 .title-2 {
+color:#0A808D;
+}
+
+.sidebar p {
+margin-bottom:20px;
+color: #0a1a2e;
+text-align: center;
 }
 
 .exercise-list {
@@ -48,9 +76,11 @@ transform:scale(1.02);
 }
 
 .exercise-list li.active {
-background:#00bcd4;
+background:#0A808D;
 color:white;
 }
+
+
 
 /* MAIN */
 .main {
@@ -66,7 +96,7 @@ justify-content:center;
 width:500px;
 height:500px;
 background:black;
-border-radius:16px;
+border-radius: 12px;
 position:relative;
 overflow:hidden;
 box-shadow:0 20px 40px rgba(0,0,0,0.2);
@@ -76,10 +106,10 @@ box-shadow:0 20px 40px rgba(0,0,0,0.2);
 #ball {
 width:20px;
 height:20px;
-background:#00d4ff;
+background:#0A808D;
 border-radius:50%;
 position:absolute;
-box-shadow:0 0 20px #00d4ff;
+/* box-shadow:0 0 20px #00d4ff;*/
 }
 
 /* OPTOKINETIC */
@@ -111,14 +141,16 @@ border-radius:8px;
 }
 
 button {
-background:#00bcd4;
+background:#0A808D;
 color:white;
 cursor:pointer;
+opacity: .9;
 transition:0.2s;
 }
 
 button:hover {
 transform:translateY(-2px);
+opacity:1;
 }
 
 button:active {

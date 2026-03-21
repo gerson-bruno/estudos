@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reabilitação Visual PRO</title>
+<title>VestibuTrain</title>
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -14,16 +15,18 @@
 
     <!-- SIDEBAR -->
     <aside class="sidebar">
-        <h2>Exercícios</h2>
+        <img src="img/logo-nobg.png" alt="logo vestibutrain" class="logo">
+        <h1><span class="title-1">Vestibu</span><span class="title-2">Train</span></h1>
+        <p>Reabilitação visual de alta precisão.</p>
 
         <ul class="exercise-list">
-            <li onclick="selectExercise(event,'saccade')">Sacadas <small>(Saccades)</small><span class="icon" onclick="showInfo(event,'saccade')">❓</span></li>
-            <li onclick="selectExercise(event,'smooth')">Seguimento Suave <small>(Smooth)</small><span class="icon" onclick="showInfo(event,'smooth')">❓</span></li>
-            <li onclick="selectExercise(event,'vertical')">Vertical<span class="icon" onclick="showInfo(event,'vertical')">❓</span></li>
-            <li onclick="selectExercise(event,'diagonal')">Diagonal<span class="icon" onclick="showInfo(event,'diagonal')">❓</span></li>
-            <li onclick="selectExercise(event,'vor')">VOR x1<span class="icon" onclick="showInfo(event,'vor')">❓</span></li>
-            <li onclick="selectExercise(event,'optokinetic')">Optocinético<span class="icon" onclick="showInfo(event,'optokinetic')">❓</span></li>
-            <li onclick="selectExercise(event,'random')">Alvo Aleatório<span class="icon" onclick="showInfo(event,'random')">❓</span></li>
+            <li onclick="selectExercise(event,'saccade')">Sacadas <small>(Saccades)</small><span class="icon" onclick="showInfo(event,'saccade')"><i class="fa-solid fa-circle-info"></i></span></li>
+            <li onclick="selectExercise(event,'smooth')">Seguimento Suave<span class="icon" onclick="showInfo(event,'smooth')"><i class="fa-solid fa-circle-info"></i></span></li>
+            <li onclick="selectExercise(event,'vertical')">Vertical<span class="icon" onclick="showInfo(event,'vertical')"><i class="fa-solid fa-circle-info"></i></span></li>
+            <li onclick="selectExercise(event,'diagonal')">Diagonal<span class="icon" onclick="showInfo(event,'diagonal')"><i class="fa-solid fa-circle-info"></i></span></li>
+            <li onclick="selectExercise(event,'vor')">VOR x1<span class="icon" onclick="showInfo(event,'vor')"><i class="fa-solid fa-circle-info"></i></span></li>
+            <li onclick="selectExercise(event,'optokinetic')">Optocinético<span class="icon" onclick="showInfo(event,'optokinetic')"><i class="fa-solid fa-circle-info"></i></span></li>
+            <li onclick="selectExercise(event,'random')">Alvo Aleatório<span class="icon" onclick="showInfo(event,'random')"><i class="fa-solid fa-circle-info"></i></span></li>
         </ul>
     </aside>
 
@@ -49,17 +52,16 @@
                 <option value="120">2 min</option>
             </select>
 
-            <br>
+            
+            <section class="buttons">
+            <button onclick="start()"><i class="fa-solid fa-play"></i> Iniciar</button>
+            <button onclick="stop()"><i class="fa-solid fa-stop"></i> Parar</button>
+            <button onclick="fullscreen()"><i class="fa-solid fa-expand"></i> Tela Cheia </button>
+            </section>
 
-            <button onclick="start()">Iniciar</button>
-            <button onclick="stop()">Parar</button>
-            <button onclick="fullscreen()">Tela Cheia</button>
-
-            <div id="timer">Tempo: 0</div>
+            <span id="timer">Tempo: 0 </span><span> <i class="fa-solid fa-stopwatch"></i></span>
             <div id="score"></div>
-
         </div>
-
     </main>
 
 </div>
