@@ -39,8 +39,25 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     margin: 20px;
     gap: 10px;
+}
+
+.input-personalizacao {
+    padding: 6px;
+    border: 1px solid var(--verde-medio);
+    border-radius: 6px;
+    flex: 1;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.input-personalizacao:focus {
+    outline: none;
+    border-color: var(--laranja);
 }
 
 .lista {
@@ -149,4 +166,59 @@ body {
 
 .preco-total {
     color: var(--vermelho)
+}
+
+
+@media (max-width: 600px) {
+
+  .title,
+  .container,
+  .lista {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  /* INPUTS */
+  .inputs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-personalizacao {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* BOTÕES PRINCIPAIS */
+  .btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn,
+  .btn-limpar {
+    width: 100%;
+  }
+
+  /* LISTA */
+  .lista li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .info {
+    white-space: normal; 
+  }
+
+  .acoes {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .btn-editar,
+  .btn-remove {
+    margin: 0;
+    padding: 8px 12px;
+  }
 }

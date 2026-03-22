@@ -1,182 +1,143 @@
-//Salvar no local storage
+const listaEl = document.querySelector('.lista');
+
+// SALVAR DADOS 
 function salvarDados() {
-  const listaItens = document.querySelectorAll('.lista li');
   const itens = [];
 
-  listaItens.forEach((li) => {
-    const texto = li.textContent;
-    const partes = texto.split('R$');
-
-    const nome = partes[0].replace(':', '').trim();
-    const valor = parseFloat(partes[partes.length - 1]);
-
-    itens.push({ nome, valor });
+  document.querySelectorAll('.lista li').forEach((li) => {
+    itens.push({
+      nome: li.dataset.nome,
+      quantidade: Number(li.dataset.quantidade),
+      preco: Number(li.dataset.preco),
+    });
   });
 
   localStorage.setItem('listaCompras', JSON.stringify(itens));
 }
 
-function carregarDados() {
-  const dados = localStorage.getItem('listaCompras');
-  if (!dados) return;
+// CRIAR ITEM (REUTILIZÁVEL)
+function criarItem({ nome, quantidade, preco }) {
+  const li = document.createElement('li');
 
-  const itens = JSON.parse(dados);
+  const total = (quantidade * preco).toFixed(2);
 
-  itens.forEach((item) => {
-    const li = document.createElement('li');
+  // salva dados no elemento
+  li.dataset.nome = nome;
+  li.dataset.quantidade = quantidade;
+  li.dataset.preco = preco;
 
-    li.innerHTML = `<strong>${item.nome}</strong> - Total R$ ${item.valor.toFixed(2)}`;
+  // INFO
+  const info = document.createElement('div');
+  info.className = 'info';
+  info.innerHTML = `
+    <strong>${nome}</strong> 
+    - Quantidade: ${quantidade} 
+    - Valor unitário R$ ${preco} 
+    - Total R$ ${total}
+  `;
 
-    
-    const btnEditar = document.createElement('button');
-    btnEditar.textContent = 'Editar';
-    btnEditar.className = 'btn-editar';
-
-    btnEditar.addEventListener('click', () => {
-      document.querySelector('#nome').value = item.nome;
-      document.querySelector('#quantidade').value = 1;
-      document.querySelector('#preco').value = item.valor;
-
-      li.remove();
-      atualizarTotalGeral();
-      salvarDados();
-    });
-
-    
-    const btnRemover = document.createElement('button');
-    btnRemover.textContent = 'Remover';
-    btnRemover.className = 'btn-remove';
-
-    btnRemover.addEventListener('click', () => {
-      li.remove();
-      atualizarTotalGeral();
-      salvarDados();
-    });
-
-  
-    const acoes = document.createElement('div');
-    acoes.className = 'acoes';
-    acoes.appendChild(btnEditar);
-    acoes.appendChild(btnRemover);
-
-    li.appendChild(acoes);
-
-    document.querySelector('.lista').appendChild(li);
-  });
-
-  atualizarTotalGeral();
-}
-
-//Atualizando o total geral
-function atualizarTotalGeral() {
-  const listaItens = document.querySelectorAll('.lista li');
-  let soma = 0;
-
-  listaItens.forEach((li) => {
-  const texto = li.textContent;
-  const partes = texto.split('R$');
-
-  const valorItem = parseFloat(partes[partes.length - 1]);
-
-  if (!isNaN(valorItem)) {
-    soma += valorItem;
-  }
-});;
-
-  document.querySelector('#valor-total-geral').textContent = soma.toFixed(2);
-}
-
-//Evento Clique
-document.querySelector('#botao-add').addEventListener('click', () => {
-  //Itens, quantidade e preço
-  const inputNome = document.querySelector('#nome').value;
-  const inputQuantidade = Number(document.querySelector('#quantidade').value);
-  const inputPreco = Number(document.querySelector('#preco').value);
-
-  //Preço final
-  const precoFinal = (inputQuantidade * inputPreco).toFixed(2);
-
-  //Validando se os campos foram preenchidos e apagando o alerta apos 3 segundos
-  if (!inputNome || !inputPreco || !inputQuantidade) {
-    document.querySelector('.requerid').textContent =
-      'Por favor, preencha todos os campos!';
-    setTimeout(() => {
-      document.querySelector('.requerid').textContent = '';
-    }, 3000);
-    return;
-  }
-
-  
-  //Editar unidade
+  // BOTÕES
   const btnEditar = document.createElement('button');
+  btnEditar.textContent = 'Editar';
   btnEditar.className = 'btn-editar';
 
-  //Remover unidade
   const btnRemover = document.createElement('button');
+  btnRemover.textContent = 'Remover';
   btnRemover.className = 'btn-remove';
 
   const acoes = document.createElement('div');
-    acoes.className = 'acoes';
-    acoes.appendChild(btnEditar);
-    acoes.appendChild(btnRemover);
+  acoes.className = 'acoes';
+  acoes.appendChild(btnEditar);
+  acoes.appendChild(btnRemover);
 
-  //Adicionando o item da lista na pagina com o nome e preço final unitário
-  const li = document.createElement('li');
-  const info = document.createElement('div');
-  info.className = 'info';
-  li.innerHTML = `<strong>${inputNome}</strong> - Quantidade: ${inputQuantidade} - Valor unitário R$ ${inputPreco} - Total R$ ${precoFinal}`;
-  document.querySelector('.lista').appendChild(li);
-  li.appendChild(info);
-  li.appendChild(acoes);
-  atualizarTotalGeral();
-  salvarDados();
+  // EDITAR
+  btnEditar.addEventListener('click', () => {
+    document.querySelector('#nome').value = li.dataset.nome;
+    document.querySelector('#quantidade').value = li.dataset.quantidade;
+    document.querySelector('#preco').value = li.dataset.preco;
 
+    li.remove();
+    atualizarTotalGeral();
+    salvarDados();
+  });
 
-  //Editando um item da lista
-  btnEditar.textContent = 'Editar';
-
-btnEditar.addEventListener('click', () => {
-  const texto = li.textContent;
-
-  const nome = texto.split('Quantidade:')[0].trim();
-
-  const quantidade = Number(
-    texto.split('Quantidade:')[1].split('-')[0].trim()
-  );
-
-  const preco = Number(
-    texto.split('Valor unitário R$')[1].split('-')[0].trim()
-  );
-
-  document.querySelector('#nome').value = nome;
-  document.querySelector('#quantidade').value = quantidade;
-  document.querySelector('#preco').value = preco;
-  li.remove();
-  atualizarTotalGeral();
-  salvarDados();
-});
-  
-  //Removendo um item da lista
-  btnRemover.textContent = 'Remover';
+  // REMOVER
   btnRemover.addEventListener('click', () => {
     li.remove();
     atualizarTotalGeral();
     salvarDados();
   });
 
-  
+  li.appendChild(info);
+  li.appendChild(acoes);
 
-  //Limpar os inputs
+  listaEl.appendChild(li);
+}
+
+
+// CARREGAR
+function carregarDados() {
+  const dados = localStorage.getItem('listaCompras');
+  if (!dados) return;
+
+  const itens = JSON.parse(dados);
+
+  itens.forEach(criarItem);
+
+  atualizarTotalGeral();
+}
+
+
+// TOTAL
+function atualizarTotalGeral() {
+  let soma = 0;
+
+  document.querySelectorAll('.lista li').forEach((li) => {
+    const quantidade = Number(li.dataset.quantidade);
+    const preco = Number(li.dataset.preco);
+
+    soma += quantidade * preco;
+  });
+
+  document.querySelector('#valor-total-geral').textContent = soma.toFixed(2);
+}
+
+
+// ADICIONAR
+document.querySelector('#botao-add').addEventListener('click', () => {
+  const nome = document.querySelector('#nome').value.trim();
+  const quantidade = Number(document.querySelector('#quantidade').value);
+  const preco = Number(document.querySelector('#preco').value);
+
+  if (!nome || !quantidade || !preco) {
+    document.querySelector('.requerid').textContent =
+      'Preencha todos os campos';
+    setTimeout(() => {
+      document.querySelector('.requerid').textContent = '';
+    }, 3000);
+    return;
+  }
+
+  criarItem({ nome, quantidade, preco });
+
+  atualizarTotalGeral();
+  salvarDados();
+
+  // limpar
   document.querySelector('#nome').value = '';
-  document.querySelector('#quantidade').value = '1';
+  document.querySelector('#quantidade').value = 1;
   document.querySelector('#preco').value = '';
   document.querySelector('#nome').focus();
 });
 
+
+// LIMPAR
+
 document.querySelector('#botao-limpar').addEventListener('click', () => {
-  document.querySelector('.lista').innerHTML = '';
+  listaEl.innerHTML = '';
   atualizarTotalGeral();
   salvarDados();
 });
 
+// INIT
 carregarDados();
