@@ -1,10 +1,10 @@
 :root {
-    --azul-claro: #cbdcdf;
-    --azul-medio:#567e83;
-    --laranja-claro: #d1b8a0;
-    --laranja-medio: #ff8830;
-    --preto: #272727;
-    --branco: #ffffff;
+    --verde-claro: #cce0a3;
+    --verde-medio:#6b8d43;
+    --laranja: #df931b;
+    --vermelho: #98092b;
+    --preto: #1f2f3a;
+    --branco: #f9faf8;
 }
 
 * {
@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: var(--azul-claro);
+    background-color: var(--verde-claro);
     color: var(--preto);
     font-family: 'Poppins', sans-serif;
 }
@@ -31,9 +31,17 @@ body {
 }
 
 .requerid {
-    color: var(--laranja-medio);
+    color: var(--vermelho);
     margin: 20px auto 0 auto;
 }    
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 10px;
+}
 
 .lista {
     text-align: left;
@@ -48,19 +56,24 @@ body {
 
 .lista li {
     display: flex;
-    justify-content: space-between; 
     align-items: center;           
     padding: 10px;
     margin-bottom: 8px;
-    border-bottom: 1px solid var(--azul-medio); 
+    border-bottom: 1px solid var(--verde-medio); 
 }
 
-.inputs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px;
-    gap: 10px;
+.info {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.acoes {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
 }
 
 .btns {
@@ -70,13 +83,13 @@ body {
 }
 
 .btn {
-    background-color: var(--azul-medio);
+    background-color: var(--verde-medio);
     color: var(--branco);
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.9;
     transition: 0.3s;
 }
 
@@ -84,19 +97,56 @@ body {
     opacity: 1;
 }
 
-.btn-remove {
-    margin-top: 10px;
-    margin-left: 10px;
-    background-color: var(--laranja-medio);
+.btn-limpar {
+    background-color: var(--laranja);
     color: var(--branco);
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.btn-limpar:hover {
+    opacity: 1;
+}
+
+.btn-remove {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: 0.9;
     transition: 0.3s;
 }
 
 .btn-remove:hover {
     opacity: 1;
+}
+
+.btn-editar {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: var(--laranja);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.btn-editar:hover {
+    opacity: 1;
+}
+
+
+.preco-total {
+    color: var(--vermelho)
 }
