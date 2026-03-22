@@ -19,6 +19,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+    color: var(--laranja);
+    margin-bottom: 10px;
+}
+
 .title,
 .container {
     text-align: center;
@@ -168,6 +173,13 @@ body {
     color: var(--vermelho)
 }
 
+
+input,
+button,
+select,
+textarea {
+  font-size: 16px;
+}
 
 @media (max-width: 600px) {
 
