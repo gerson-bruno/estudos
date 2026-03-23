@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokenpo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+  <h1>Jokenpô</h1>
+
+  <div class="placar">
+    <span>Você: <span id="userScore">0</span></span>
+    <span>CPU: <span id="cpuScore">0</span></span>
+  </div>
+
+  <div id="animacao" class="animacao">🤜🤛</div>
+
+  <div id="resultado" class="resultado"></div>
+
+  <div class="botoes">
+    <button onclick="jogar('pedra')">🪨 Pedra</button>
+    <button onclick="jogar('papel')">📄 Papel</button>
+    <button onclick="jogar('tesoura')">✂️ Tesoura</button>
+  </div>
+
+  <button class="reset" onclick="resetar()">
+    Resetar
+  </button>
+</div>
+  </body>
+</html>
