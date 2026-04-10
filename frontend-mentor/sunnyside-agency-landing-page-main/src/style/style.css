@@ -327,6 +327,11 @@ footer {
 
 .attribution { margin-top: 2rem; }
 
+.attribution a {
+    color: var(--bluetext);
+    text-decoration: none;
+}
+
 .footer-social {
     display: flex;
     gap: 2rem;
