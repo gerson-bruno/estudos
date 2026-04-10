@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: burlywood;
+}
+
+.material-symbols-outlined {
+  color: teal;
+  background-color: #fff;
+  font-size: 68px;
+  padding: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+.menu {
+    text-decoration: none;
+    list-style-type: none;
+    color: teal;
+    background-color: #fff;
+    font-size: 48px;
+    padding: 6px;
+    border-radius: 6px;
+    max-width: 120px;
+    display: none;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+span {
+    color: #fff;
+    font-size: 48px;
+}
+
+
+.apareceu {
+    margin-top: 24px;
+    color: #fff;
+    font-size: 48px;
+    cursor: pointer;
+}
+
+.sumiu {
+    margin-top: 24px;
+    color: #fff;
+    font-size: 48px;
+    display: none;
+}
+
+.num1 {
+    color: #fff;
+    font-size: 48px;
+    cursor: pointer;
+}
+
+.num2 {
+    color: #fff;
+    font-size: 48px;
+    cursor: pointer;
+    display: none;
+}
+
+.num3 {
+    color: #fff;
+    font-size: 48px;
+    cursor: pointer;
+    display: none;
+}
